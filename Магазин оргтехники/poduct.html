@@ -15,6 +15,36 @@
   <a href="product.html">Страница каталога</a>
   </div>
 
+<div>
+      <h3>Комментарий к товару</h3>
+      <form name="form" method="post" action="">
+        <p>
+          <label>Ваше имя:<br>
+            <input type="name" name="name" autocomplete required>
+        </label>
+        </p>
+
+        <p>
+          <label>Текст комментария:<br>
+            <textarea cols="40" rows="6" name="message" required
+                placeholder="Введите текст Ваш комментарий здесь."
+            ></textarea>
+        </label>
+        </p>
+
+        <p>Выберите рейтинг:</p>
+        <input type="radio" name="userrating" value="1">
+        <input type="radio" name="userrating" value="2">
+        <input type="radio" name="userrating" value="3">
+        <input type="radio" name="userrating" value="4">
+        <input type="radio" name="userrating" value="5">
+
+        <p>
+          <input type="submit" value="Отправить">
+        </p>
+      </form>
+    </div>
+                
   <div>
 <p><b>Имя модели</p></b><p>Модель 1</p>
     </div>
