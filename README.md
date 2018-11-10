@@ -28,3 +28,5 @@ https://github.com/AdukarIT/DobrovskayaEF/tree/master/%D0%A1%D0%B0%D0%B9%D1%82%2
 Задание к уроку 7. Ссылка на результат по проверке знаний:
 
 https://webref.ru/node/1865/quiz-results/2469/view
+
+https://webref.ru/node/1459/quiz-results/2621/view
