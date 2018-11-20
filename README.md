@@ -32,3 +32,7 @@ https://webref.ru/node/1865/quiz-results/2469/view
 https://webref.ru/node/1459/quiz-results/2621/view
 
 https://webref.ru/node/1921/quiz-results/2625/view
+
+Задание к уроку 8. Float. Псевдоклассы и составные селекторы.
+
+https://github.com/AdukarIT/DobrovskayaEF/tree/master/%D0%A2%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0
