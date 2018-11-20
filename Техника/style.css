@@ -1,0 +1,179 @@
+h1 {
+  font-size: 40px;
+  color: #008EB0;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+nav {
+  background: #edf6ff;
+}
+
+nav ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.nav_menu {
+  margin: 0;
+  padding: 0;
+  line-height: 1.8;
+  background: #edf6ff;
+  font-family: Arial, sans-serif;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.nav_menu ul {
+  display: none;
+  background-color: #edf6ff;
+  position: absolute;
+  width: 25%;
+}
+
+.nav_menu,
+.nav_menu ul {
+  margin: 0;
+  padding: 10px;
+  list-style-type: none;
+}
+
+.nav_menu li:hover ul {
+  display: block;
+}
+
+.nav_menu li {
+  list-style: none;
+  display: inline-block;
+  width: 25%;
+  text-align: left;
+}
+
+.sub_menu li {
+  display: block;
+}
+
+.nav_menu li a {
+  text-decoration: none;
+  display: block;
+}
+
+a:hover {
+  color: #008000;
+}
+
+h2 {
+  text-align: left
+
+}
+
+.form_registration {
+  border: 2px solid #008000;
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  font-size: 20px;
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.form_registration--input {
+  text-align: right;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+}
+
+.form_registration label {
+  float: right;
+}
+
+.form_input {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.delivery_method {
+  margin-top: 60px;
+}
+
+.delivery_form {
+  margin-top: 20px;
+}
+
+[id="check"] {
+  display: none;
+}
+
+.check {
+  display: none;
+}
+
+.map_link {
+  border-bottom: 1px solid #008000;
+}
+
+.map_link:hover {
+  background: #008000;
+}
+
+.store_location {
+  display: none;
+  width: 100px;
+  height: 50px;
+  position: relative;
+}
+
+label {
+  display: inline-block;
+}
+
+input#check:checked~.store_location {
+  display: block;
+}
+
+.delivery_address {
+  display: none;
+  position: relative;
+  padding: 10px 0;
+}
+
+input:checked~.delivery_address {
+  display: block;
+}
+
+.textarea_position {
+  position: relative;
+}
+
+.order_comment {
+  padding: 20px 0;
+}
+
+.checkbox_required+button {
+  display: none;
+}
+
+.checkbox_required:checked+button {
+  display: inline;
+}
+
+.checkbox_required {
+  position: relative;
+  padding-top: 20px;
+}
+
+.submit_enabled {
+  display: none;
+  position: absolute;
+}
+
+.agreed:checked~.submit_enabled {
+  display: block;
+}
+
+.contacts {
+  position: absolute;
+  padding-top: 60px;
+}

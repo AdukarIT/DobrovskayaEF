@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Форма заказа</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>Техника</h1>
+    </header>
+    <nav>
+      <ul class="nav_menu">
+        <li><a href="#">Бытовая техника</a>
+          <ul class="sub_menu">
+            <li><a href="#">Стиральные машины</a></li>
+            <li><a href="#">Пылесосы</a></li>
+            <li><a href="#">Швейные, вышивальные машины</a></li>
+            <li><a href="#">Утюги</a></li>
+            <li><a href="#">Электровеники</a></li>
+            <li><a href="#">Сушилки для обуви</a></li>
+          </ul>
+          <li><a href="#">Техника для кухни</a>
+            <ul class="sub_menu">
+              <li><a href="#">Холодильники</a></li>
+              <li><a href="#">Кухонные плиты</a></li>
+              <li><a href="#">Морозильники</a></li>
+              <li><a href="#">Настольные плиты</a></li>
+              <li><a href="#">Ростеры, мини-печи</a></li>
+              <li><a href="#">Вытяжки</a></li>
+              <li><a href="#">Мироволновые печи</a></li>
+            </ul>
+            <li><a href="#">Компьютерная техника</a>
+              <ul class="sub_menu">
+                <li><a href="#">Ноутбуки</a></li>
+                <li><a href="#">Планшеты</a></li>
+                <li><a href="#">Компьютеры, моноблоки</a></li>
+                <li><a href="#">Игровые приставки</a></li>
+                <li><a href="#">Серверное оборудование</a></li>
+              </ul>
+              <li><a href="#">Корзина</a>
+                <ul class="sub_menu">
+                  <li><a href="#">Товары не выбраны</a></li>
+                </ul>
+              </li>
+      </ul>
+    </nav>
+    <h2>Форма отправки заказа</h2>
+    <form class="form_registration" name="order_block" method="post" action="/">
+      <label class="form_registration--input">Имя и фамилия
+             <input class="form_input" type="text" name="name" autocomplete="on" required>
+           </label><br>
+      <label>Номер телефона
+             <input class="form_input" type="tel" name="phone" autocomplete="on" required>
+           </label><br>
+      <label>E-mail
+             <input class="form_input" type="email" name="email" autocomplete="on" required>
+           </label>
+    </form>
+    <div class="delivery_method">
+      Выберите способ доставки:<br>
+
+      <input type="radio" name="delivery" value="delivery1" checked> Самовывоз со склада по адресу: г.Минск, ул.Лесная, 18
+      <div>
+
+        <label for="check">
+<input type="checkbox" id="check">
+<span class="map_link">Адрес на карте:</span>
+
+          <iframe class="store_location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2347.76245253455!2d27.667999915477868!3d53.95372698011077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbc92c347b6f2d%3A0x2cd8a359c7227fcb!2z0YPQuy4g0JvQtdGB0L3QsNGPIDE4LCDQnNC40L3RgdC6!5e0!3m2!1sru!2sby!4v1542628719653"
+            width="600" height="450" allowfullscreen>
+</iframe>
+        </label>
+      </div>
+
+    </div><br>
+
+    <div>
+
+      <input type="radio" name="delivery" value="delivery2" id="check1"> Курьером по Минску
+
+
+
+      <div class="delivery_address">
+        <span>Введите адрес доставки:</span><br>
+        <textarea class="textarea_position" cols="30" rows="5" name="order_comments" placeholder="Укажите, пожалуйста, точный адрес доставки."></textarea>
+
+      </div>
+    </div>
+
+    <div class="order_comment">
+      <label>Текст комментария:<br>
+            <textarea cols="40" rows="6" name="message" required
+                placeholder="Введите текст Ваш комментарий здесь."
+            ></textarea>
+        </label>
+    </div>
+
+    <div class="checkbox_required">
+      <input class="agreed" type="checkbox" required>Я прочитал и согласен (согласна) с <a target="_blank" href="https://nf-rus.ru/delivery/" title="Условия доставки">условиями доставки</a>
+      <input class="submit_enabled" type="submit" value="Подтвердить заказ">
+    </div>
+    <div class="contacts">
+
+      <b>СВЯЗАТЬСЯ С НАМИ:<br><br></b><u>Номер телефона</u>: +375 17 1111111 (многоканальный)<br><u>Адрес магазина и офиса</u>: г.Минск, ул.Лесная, 18<br><u>Время работы</u>: 9.00-19.00 (без выходных)<br><u>Skype</u>: <a href="https://www.skype.com/en/">technic_minsk</a></div>
+  </body>
+
+</html>
