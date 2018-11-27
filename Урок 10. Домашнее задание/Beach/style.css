@@ -1,0 +1,12 @@
+div {
+  height: 200px;
+  max-width: 300px;
+  display: flex; 
+}
+
+.beach {
+  background-image: url("https://github.com/AdukarIT/_Tasks_/blob/master/assets/beach/sun.png?raw=true"), url("https://github.com/AdukarIT/_Tasks_/blob/master/assets/beach/sea.jpg?raw=true"), url("https://github.com/AdukarIT/_Tasks_/blob/master/assets/beach/sky.jpg?raw=true");
+  background-position: top right, bottom center, top center;
+background-size: 30% auto, 100% auto, 100% auto;
+background-repeat: no-repeat, no-repeat, no-repeat;
+}

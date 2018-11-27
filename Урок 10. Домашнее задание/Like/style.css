@@ -1,0 +1,68 @@
+@font-face {
+      font-family: 'fontello';
+      src: url('./font/fontello.eot?22665036');
+      src: url('./font/fontello.eot?22665036#iefix') format('embedded-opentype'),
+           url('./font/fontello.woff?22665036') format('woff'),
+           url('./font/fontello.ttf?22665036') format('truetype'),
+           url('./font/fontello.svg?22665036#fontello') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+	.icon-heart, .icon-heart_like {
+		color: #808080;
+	}
+@font-face {
+  font-family: 'fontello';
+  src: url('./font/fontello.eot?22665036');
+  src: url('./font/fontello.eot?22665036#iefix') format('embedded-opentype'), url('./font/fontello.woff?22665036') format('woff'), url('./font/fontello.ttf?22665036') format('truetype'), url('./font/fontello.svg?22665036#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon-heart,
+.icon-heart_like {
+  color: #808080;
+}
+
+.like {
+  display: inline-block;
+  border: 1px solid #808080;
+  padding: 5px 10px;
+}
+
+.like [type="checkbox"] {
+  display: none;
+}
+
+.icon-heart_like {
+  text-decoration: none;
+}
+
+.demo-icon {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 5px;
+  text-align: center;
+}
+
+.icon-heart {
+  *zoom: expression( this.runtimeStyle['zoom']='1', this.innerHTML='&#xe801;&nbsp;');
+}
+
+.icon-heart:hover {
+  color: #0000ff;
+}
+
+.like_checkbox:checked~.icon-heart {
+  color: #ff0000;
+}
+
+.like_checkbox:checked:hover~.icon-heart {
+  opacity: 0.3;
+}
