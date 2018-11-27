@@ -36,3 +36,7 @@ https://webref.ru/node/1921/quiz-results/2625/view
 Задание к уроку 8. Float. Псевдоклассы и составные селекторы.
 
 https://github.com/AdukarIT/DobrovskayaEF/tree/master/%D0%A2%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0
+
+Задание к уроку 10. Изображения. Шрифты и иконки.
+
+https://github.com/AdukarIT/DobrovskayaEF/tree/master/%D0%A3%D1%80%D0%BE%D0%BA%2010.%20%D0%94%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%B5%D0%B5%20%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5
