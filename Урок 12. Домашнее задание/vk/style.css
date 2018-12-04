@@ -1,0 +1,400 @@
+ @font-face {
+   font-family: 'opensans';
+   src: url('./font/opensans.eot?38132726');
+   src: url('./font/opensans.eot?38132726#iefix') format('embedded-opentype'), url('./font/opensans.woff?38132726') format('woff'), url('./font/opensans.ttf?38132726') format('truetype'), url('./font/opensans.svg?38132726#opensans') format('svg');
+   font-weight: normal;
+   font-style: normal;
+ }
+
+ * {
+   box-sizing: border-box;
+ }
+
+ html,
+ body {
+   padding: 0;
+   margin: 0;
+   font-family: Roboto;
+ }
+
+ body {
+   background-color: #edeef0;
+   display: flex;
+   flex-direction: column;
+ }
+
+ header {
+   position: sticky;
+   top: 0;
+   flex: 100%;
+   background-color: #4a76a8;
+   height: 42px;
+   box-sizing: border-box;
+   border-bottom: 1px solid #4872a3;
+ }
+
+ main {
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   height: auto;
+   flex-wrap: nowrap;
+ }
+
+ nav,
+ aside {
+   width: 25%;
+ }
+
+ 
+ /* Начало блока header */
+ 
+ .header-navigation {
+   display: flex;
+   width: 100%;
+   max-height: 42px;
+   flex-flow: row nowrap;
+   justify-content: flex-start;
+ }
+
+ .header-navigation__search input {
+   border: 0;
+   box-sizing: border-box;
+   margin: 0;
+   height: 28px;
+   width: 230px;
+   border-radius: 14px;
+   background: #224b7a url(https://vk.com/images/svg_icons/ic_head_loupe.svg) no-repeat;
+   padding-left: 19px;
+   border-left: 8px solid transparent;
+   background-position: left 8px;
+   color: #d9e2ec;
+   display: flex;
+   align-self: center;
+ }
+
+ .header-navigation__search input:focus {
+   background-color: #fff;
+   cursor: text;
+   color: #000;
+ }
+
+ .header-navigation__search input:focus::-webkit-input-placeholder {
+   color: #fff;
+ }
+
+ .header-navigation__search input::-webkit-input-placeholder {
+   color: #d9e2ec;
+ }
+
+ .header-navigation__logo {
+   display: flex;
+   flex: 0.2;
+   padding-left: 200px;
+ }
+
+ .header-navigation__logo_image {
+   width: 34px;
+   height: auto;
+ }
+
+ .header-navigation__search {
+   display: flex;
+   flex: 0.2;
+   margin-left: -90px;
+ }
+
+ .header-navigation__notify,
+ .header-navigation__audio {
+   display: flex;
+   flex: 0.04;
+   justify-content: center;
+ }
+
+ .header-navigation__notify:hover,
+ .header-navigation__audio:hover,
+ .header-navigation__user:hover {
+   background-color: #2a5885;
+   text-decoration: none;
+   cursor: pointer;
+ }
+
+ .header-navigation__notify_image, .header-navigation__audio_image {
+   width: 20px;
+   height: auto;
+ }
+
+ .header-navigation__video {
+   display: flex;
+   flex: 0.25;
+   padding-left: 1px;
+   align-items: center;
+ }
+
+ .header-navigation__video_image {
+   width: 25px;
+   height: 25px;
+ }
+
+ .header-navigation__user {
+   display: flex;
+   flex-direction: row;
+   flex: 0.10;
+   justify-content: space-around;
+   align-items: center;
+   color: #fff;
+   font-weight: 700;
+   font-size: 12.5px;
+   text-decoration: none;
+ }
+
+ .header-navigation__user_photo {
+   border-radius: 100px;
+   width: 30px;
+   height: 30px;
+ }
+
+  /* Окончание блока header 
+  и начало блока с левой стороны */
+ 
+ .navigation-bar {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+ }
+
+ .navigation-bar__items {
+   list-style: none;
+   display: flex;
+   width: 45%;
+   flex-direction: column;
+   padding: 10px;
+   line-height: 2;
+ }
+
+ .navigation-bar__items a {
+   text-decoration: none;
+   font-size: 12.5px;
+   font-family: Roboto;
+   color: #285473;
+   padding: 8px;
+ }
+
+ .navigation-bar__items_hover:hover {
+   background: #d9e2ec;
+   margin-left: -10px;
+   margin-right: -10px;
+ }
+
+ .navigation-bar__items_icon {
+   width: 20px;
+   height: 20px;
+ }
+
+   /* Окончание блока с левой стороны
+  и начало центрального блока */
+ 
+ .feed {
+   width: 40%;
+   margin: 20px;
+   flex-direction: column;
+   flex-wrap: wrap;
+   display: flex;
+   background-color: #fff;
+   line-height: 1.8;
+   padding: 20px;
+   border-radius: 2px;
+   border: 0.5px solid #d7d8db;
+   font-size: 12.5px;
+   font-family: Roboto;
+ }
+
+ .feed__image {
+   width: 50px;
+   height: auto;
+   border-radius: 100%;
+ }
+
+ .feed__preview {
+   width: 100%;
+   height: auto;
+ }
+
+ .feed__loading {
+   text-align: center;
+ }
+
+ .feed a {
+   text-decoration: none;
+   font-size: 13px;
+   font-family: Roboto;
+   color: #285473;
+ }
+
+ .feed a:hover {
+   text-decoration: underline;
+   color: #285473;
+ }
+
+   /* Окончание центрального блока 
+  и начало блока с правой стороны */
+ 
+ .aside-menu {
+   background-color: #fff;
+   display: flex;
+   width: 230px;
+   flex-direction: column;
+   padding: 10px;
+   line-height: 2;
+   position: fixed;
+   border-radius: 2px;
+   border: 0.5px solid #d7d8db;
+   margin-top: 20px;
+ }
+
+ .aside-menu a {
+   text-decoration: none;
+   font-size: 13px;
+   font-family: Roboto;
+   color: #285473;
+   padding: 8px;
+ }
+
+ .aside-menu__margin {
+   margin-left: 7px;
+ }
+
+ .aside-menu__item:hover {
+   background: #d9e2ec;
+   margin-left: -10px;
+   margin-right: -10px;
+   font-weight: 700;
+   color: #000;
+ }
+
+ .aside-menu__item:active {
+   background: #d9e2ec;
+   border-left: 2px solid #5181b8;
+   margin-left: -10px;
+   margin-right: -10px;
+   font-weight: 700;
+   color: #000;
+ }
+
+ .aside-menu__under {
+   border-bottom: 1px solid #edeef0;
+   padding-bottom: 10px;
+ }
+
+ .aside-menu__additional {
+   padding-top: 10px;
+ }
+
+   /* Блок с кнопкой "Сначала интересные" */
+ 
+ .aside-interesting-first {
+   background-color: #fff;
+   display: flex;
+   width: 230px;
+   height: 40px;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-around;
+   line-height: 2;
+   position: fixed;
+   margin-top: 310px;
+   font-size: 12.5px;
+   font-family: Roboto;
+   border-radius: 2px;
+   border: 0.5px solid #d7d8db;
+   cursor: pointer;
+ }
+
+ .aside-interesting-first label {
+   cursor: pointer;
+ }
+
+ .demo-icon {
+   font-family: "opensans";
+   font-style: normal;
+   font-weight: normal;
+   speak: none;
+   display: inline-block;
+   text-decoration: inherit;
+   width: 1em;
+   margin-right: .2em;
+   text-align: center;
+   /* opacity: .8; */
+   /* For safety - reset parent styles, that can break glyph codes*/
+   font-variant: normal;
+   text-transform: none;
+   /* fix buttons height, for twitter bootstrap */
+   line-height: 1em;
+   /* Animation center compensation - margins should be symmetric */
+   /* remove if not needed */
+   margin-left: .2em;
+   /* You can be more comfortable with increased icons size */
+   /* font-size: 120%; */
+   /* Font smoothing. That was taken from TWBS */
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   /* Uncomment for 3D effect */
+   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+ }
+
+ .icon-toggle-on,
+ .icon-toggle-off {
+   color: #4a76a8;
+ }
+
+ .icon-toggle-off {
+   *zoom: expression( this.runtimeStyle['zoom']='1', this.innerHTML='&#xf204;&nbsp;');
+ }
+
+ .icon-toggle-on {
+   *zoom: expression( this.runtimeStyle['zoom']='1', this.innerHTML='&#xf205;&nbsp;');
+ }
+
+ .aside-interesting-first__checkbox,
+ .icon-toggle-on {
+   display: none;
+ }
+
+ .aside-interesting-first__checkbox:checked~.icon-toggle-off {
+   display: none;
+ }
+
+ .aside-interesting-first__checkbox:checked~.icon-toggle-on {
+   display: inline-block;
+ }
+
+   /* Блок в правом нижнем углу */
+ 
+ .chat-online {
+   background-color: #d9e2ec;
+   display: flex;
+   width: 50px;
+   flex-flow: column wrap;
+   padding: 6px 0;
+   line-height: 2;
+   position: fixed;
+   border-radius: 2px;
+   border: 0.5px solid #d7d8db;
+   margin-top: 500px;
+   right: 10px;
+   bottom: 0;
+   align-items: center;
+   font-size: 10px;
+   font-family: Roboto;
+ }
+
+ .chat-online__image {
+   width: 40px;
+   height: auto;
+   border-radius: 100%;
+ }
+
+ .chat-online a:hover {
+   background-color: #d7d8db;
+   cursor: pointer;
+ }
