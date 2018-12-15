@@ -1,0 +1,31 @@
+.ball-container {
+  width: 1000px;
+  height: 106px;
+  padding: 0;
+  margin: 0;
+  border: 1px dashed #666;
+  box-sizing: border-box;
+  background-color: #98FB98;
+}
+
+.ball__view {
+  width: 100px;
+  height: 100px;
+}
+
+.ball-animation {
+  display: none;
+}
+
+.ball-animation__move {
+  display: inline-block;
+  transform: translate(0px, 0px) rotate(-360deg);
+  transition: all 2s cubic-bezier(0,0,0.58,1) 0s;
+  cursor: pointer;
+}
+
+.ball-animation:checked~.ball-animation__move {
+  transform: translate(900px, 0px) rotate(360deg);
+  transition: all 2s cubic-bezier(0,0,0.58,1) 0s;
+}
+
