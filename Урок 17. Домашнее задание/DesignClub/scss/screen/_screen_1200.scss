@@ -1,0 +1,115 @@
+@media screen and (max-width: 1200px) {
+  .body-view {
+    width: 100%;
+    margin: 0;
+    padding-top: 40px;
+    background: #f0f1f2;
+    border-radius: 0;
+    flex-direction: column;
+  }
+  .element-left, .element-right {
+    display: none;
+  }
+  .middle {
+    img {
+      width: 80%;
+    }
+    .name-part-one {
+      font-size: 11em;
+    }
+  }
+  .name-part-two {
+    font-size: 6.1em;
+    letter-spacing: 1.48em;
+    margin-right: .2em;
+  }
+  .middle p {
+    padding: 1em 1% 0 2%;
+    font-size: 1em;
+    width: 95%;
+  }
+  .social-links a {
+    margin-top: .7em;
+    padding-right: .1em;
+    font-size: 1.8em;
+  }
+  .mobile-screen {
+    display: flex;
+    flex-direction: column;
+  }
+  .element_hidden_left {
+    background-color: #f0f1f2;
+    border-radius: 0 45% 45% 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 60%;
+    height: 250px;
+    flex-direction: row;
+    margin-top: 40px;
+    i {
+      font-size: 7em;
+    }
+    h3 {
+      font-size: 2.5em;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 16px;
+      justify-content: center;
+      display: flex;
+    }
+  }
+  .text-position-hidden-left {
+    margin-left: 40px;
+    margin-bottom: 40px;
+    line-height: 0.5;
+  }
+  .element_hidden_right {
+    background-color: #f0f1f2;
+    border-radius: 45% 0 0 45%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 60%;
+    height: 250px;
+    flex-direction: row;
+    margin-top: 40px;
+    margin-left: 460px;
+    i {
+      font-size: 7em;
+    }
+    h3 {
+      font-size: 2.5em;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 16px;
+      justify-content: center;
+      display: flex;
+    }
+  }
+  .text-position-hidden-right {
+    margin-right: 40px;
+    margin-bottom: 80px;
+    margin-top: 25px;
+    line-height: 0.5;
+  }
+  .middle-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #000;
+    padding: 0 2em;
+    padding-bottom: 40px;
+  }
+  .middle__button {
+    margin-top: 2em;
+    padding-top: 50px;
+    width: 11em;
+    height: 180px;
+    font-size: 3.5em;
+  }
+}

@@ -1,0 +1,149 @@
+.middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #000;
+  padding: 0 2em;
+  img {
+    width: 21.5em;
+    margin-top: 3em;
+    display: none;
+    animation-name: middle-opacity;
+    animation-duration: 8s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    display: block;
+  }
+}
+
+.name-part-one {
+  font-size: 5.3em;
+  font-family: 'BankGothicBold';
+  text-transform: uppercase;
+  letter-spacing: -3.5px;
+  cursor: default;
+  display: none;
+  animation-name: middle-opacity;
+  animation-duration: 8s;
+  animation-delay: 0s;
+  animation-timing-function: ease-out;
+  display: block;
+}
+
+.name-part-two {
+  font-size: 3em;
+  font-family: 'BankGothicBold';
+  text-transform: uppercase;
+  letter-spacing: 1.42em;
+  width: 7.3em;
+  cursor: default;
+  display: none;
+  animation-duration: 8s;
+  animation-delay: 0s;
+  animation-name: middle-opacity;
+  animation-timing-function: ease-out;
+  display: block;
+}
+
+.middle p {
+  font-size: 1em;
+  margin: 0;
+  margin-top: 2em;
+  width: 22em;
+}
+
+@keyframes middle-opacity {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.1;
+  }
+
+  30% {
+    opacity: 0.2;
+  }
+
+  40% {
+    opacity: 0.3;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  60% {
+    opacity: 0.6;
+  }
+
+  70% {
+    opacity: 0.7;
+  }
+
+  80% {
+    opacity: 0.8;
+  }
+
+  90% {
+    opacity: 0.9;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.middle__button {
+  margin-top: 2em;
+  padding-top: 5px;
+  width: 14em;
+  height: 42px;
+  background: #000;
+  border-radius: .3em;
+  border: 0;
+  color: #eff0f1;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  &:hover {
+    background: #646464;
+  }
+}
+
+.middle div {
+  font-size: 5.3em;
+  font-family: 'BankGothicBold';
+  text-transform: uppercase;
+  letter-spacing: -3.5px;
+  cursor: default;
+}
+
+.social-links a {
+  margin-top: 2.2em;
+  font-size: .6em;
+  padding-right: .5em;
+  text-decoration: none;
+  &.fa:hover {
+    margin-top: 1em;
+    font-size: .8em;
+    color: #646464;
+  }
+  &:visited {
+    color: #000;
+  }
+}
