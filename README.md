@@ -48,3 +48,7 @@ https://github.com/AdukarIT/DobrovskayaEF/tree/master/%D0%A3%D1%80%D0%BE%D0%BA%2
 Задание к уроку 14. Эффекты. Анимация.
 
 https://github.com/AdukarIT/DobrovskayaEF/tree/master/%D0%A3%D1%80%D0%BE%D0%BA%2014.%20%D0%94%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%B5%D0%B5%20%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5
+
+Задание  уроку 17. node.js + npm + sass
+
+https://github.com/AdukarIT/DobrovskayaEF/tree/master/%D0%A3%D1%80%D0%BE%D0%BA%2017.%20%D0%94%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%B5%D0%B5%20%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5/DesignClub
