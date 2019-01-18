@@ -60,3 +60,7 @@ JavaScript
 Задание к уроку 1. Что такое JavaScript.
 
 https://github.com/AdukarIT/DobrovskayaEF/blob/master/homework1.txt
+
+Задание к уроку 2. Операторы. Циклы.
+
+https://github.com/AdukarIT/DobrovskayaEF/tree/master/tasks2
