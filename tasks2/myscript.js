@@ -77,29 +77,11 @@ if (input <= 0) {
 
 Task 4.
 
-let a1 = 1;
-let a2 = 2;
-let a3 = 3;
-let a4 = 4;
-let a5 = 5;
-let a6 = 6;
-let a7 = 7;
-let a8 = 8;
-let a9 = 9;
-let a10 = 10;
-
-let input = +prompt("Введите число от 1 до 10");
-if (input > 0 && input <=20) {
-    console.log(input + "x" + a1 + "=" + input * a1);
-    console.log(input + "x" + a2 + "=" + input * a2);
-    console.log(input + "x" + a3 + "=" + input * a3);
-    console.log(input + "x" + a4 + "=" + input * a4);
-    console.log(input + "x" + a5 + "=" + input * a5);
-    console.log(input + "x" + a6 + "=" + input * a6);
-    console.log(input + "x" + a7 + "=" + input * a7);
-    console.log(input + "x" + a8 + "=" + input * a8);
-    console.log(input + "x" + a9 + "=" + input * a9);
-    console.log(input + "x" + a10 + "=" + input * a10);
+let twentyTimesTable = +prompt("Введите число от 1 до 20");
+for (let i = 1; i <= 10; i++) {
+	if (twentyTimesTable > 0 && twentyTimesTable <=20) {
+	console.log(twentyTimesTable + "x" + i + "=" + twentyTimesTable * i);
+}
 }
 
 Task 5.
