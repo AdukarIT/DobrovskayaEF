@@ -2,62 +2,62 @@
 
 Task 1.
 
-    let input = +prompt("Введите номер квартиры");
-    if (input <= 0 || input > 100) {
+    let flatNumbers = +prompt("Введите номер квартиры");
+    if (flatNumbers <= 0 || flatNumbers > 100) {
     	console.log("Неверный номер квартиры!");
     	alert("Неверный номер квартиры!");
-    } else if (input >= 1 && input <=20) {
+    } else if (flatNumbers >= 1 && flatNumbers <=20) {
     	console.log(1);
-    } else if (input >= 21 && input <=40) {
+    } else if (flatNumbers >= 21 && flatNumbers <=40) {
     	console.log(2);
-    } else if (input >= 41 && input <=60) {
+    } else if (flatNumbers >= 41 && flatNumbers <=60) {
     	console.log(3);
     }
-    else if (input >= 61 && input <=80) {
+    else if (flatNumbers >= 61 && flatNumbers <=80) {
     	console.log(4);
     }
-    else if (input >= 81 && input <=100) {
+    else if (flatNumbers >= 81 && flatNumbers <=100) {
     	console.log(5);
     }
 
 Task 2.
 
-let input = prompt("Введите марку автомобиля");
-switch (input) {
+let autoCountries = prompt("Введите марку автомобиля");
+switch (autoCountries) {
     case "BMW":
     case "bmw":
     case "Bmw":
-    console.log(input + "\nGermany");
+    console.log(autoCountries + "\nGermany");
     break;
     case "TOYOTA":
     case "toyota":
     case "Toyota":
-    console.log(input + "\nJapan");
+    console.log(autoCountries + "\nJapan");
     break;
     case "FORD":
     case "ford":
     case "Ford":
-    console.log(input + "\nUnited States of America");
+    console.log(autoCountries + "\nUnited States of America");
     break;
     case "PEUGEOT":
     case "peugeot":
     case "Peugeot":
-    console.log(input + "\nFrance");
+    console.log(autoCountries + "\nFrance");
     break;
     case "MAZDA":
     case "mazda":
     case "Mazda":
-    console.log(input + "\nJapan");
+    console.log(autoCountries + "\nJapan");
     break;
     case "VOLKSWAGEN":
     case "volkswagen":
     case "Volkswagen":
-    console.log(input + "\nGermany");
+    console.log(autoCountries + "\nGermany");
     break;
     case "VOLVO":
     case "volvo":
     case "Volvo":
-    console.log(input + "\nSweden");
+    console.log(autoCountries + "\nSweden");
     break;
     default:
     console.log("some_input - страна происхождения неизвестна");
@@ -65,12 +65,12 @@ switch (input) {
 
 Task 3.
 
-let input = prompt("Введите номер года");
-if (input <= 0) {
+let leapYearOrNo = prompt("Введите номер года");
+if (leapYearOrNo <= 0) {
         console.log("Год указан неверно");
-} else if (input % 100 == 0 && input % 400 !== 0) {
+} else if (leapYearOrNo % 100 == 0 && leapYearOrNo % 400 !== 0) {
     console.log("Это не високосный год");
-    } else if (input % 4 == 0 || input % 400 == 0) {
+    } else if (leapYearOrNo % 4 == 0 || leapYearOrNo % 400 == 0) {
     console.log("Это високосный год");
 } else {
 	console.log("Это не високосный год");
