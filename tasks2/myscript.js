@@ -89,7 +89,7 @@ Task 5.
 
 let totalSumm = 0;
 
-for (x = 0; x <=50; x++) {
+for (let x = 0; x <=50; x++) {
     if (x % 2 == 0) continue;
     totalSumm = totalSumm + x;
 }
@@ -102,7 +102,7 @@ let b = 1;
 
 console.log(a);
 console.log(b);
-for (i = 3; i <= 15; i++) {
+for (let i = 3; i <= 15; i++) {
     let d = a + b;
     a = b;
     b = d;
