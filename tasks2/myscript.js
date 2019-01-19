@@ -65,15 +65,16 @@ switch (input) {
 
 Task 3.
 
-let x = 4;
 let input = prompt("Введите номер года");
 if (input <= 0) {
         console.log("Год указан неверно");
-} else if ((input % x) == 0) {
+} else if (input % 100 == 0 && input % 400 !== 0) {
+    console.log("Это не високосный год");
+    } else if (input % 4 == 0 || input % 400 == 0) {
     console.log("Это високосный год");
 } else {
-    console.log("Это не високосный год");
-    }
+	console.log("Это не високосный год");
+}
 
 Task 4.
 
