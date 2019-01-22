@@ -64,3 +64,7 @@ https://github.com/AdukarIT/DobrovskayaEF/blob/master/homework1.txt
 Задание к уроку 2. Операторы. Циклы.
 
 https://github.com/AdukarIT/DobrovskayaEF/tree/master/tasks2
+
+Задание к уроку 3. Функции.
+
+https://github.com/AdukarIT/DobrovskayaEF/tree/master/tasks3
