@@ -32,8 +32,6 @@ let numberOfDays = +prompt("Введите количество дней");
 
 Task 3.
 
-let a;
-
 function factorial (a) {
     if (a < 0) {
     	return false;
