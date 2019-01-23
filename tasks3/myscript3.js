@@ -6,11 +6,11 @@ let numberOne = +prompt("Введите число");
   let numberTwo = +prompt("Введите число");
     let numberThree = +prompt("Введите число");
     function returnLowest (numberOne, numberTwo, numberThree) {
-    	if (numberOne < numberTwo && numberOne < numberThree) {
+    	if (numberOne <= numberTwo && numberOne <= numberThree) {
     	return numberOne;
-    } if (numberTwo < numberOne && numberTwo < numberThree) {
+    } if (numberTwo <= numberOne && numberTwo <= numberThree) {
     	return numberTwo;
-    } if (numberThree < numberOne && numberThree < numberTwo) {
+    } else {
     	return numberThree;
     	}
     }
@@ -45,14 +45,13 @@ function factorial (a) {
 
 Task 4.
 
-let a = "";
+
 function numberReverse (n) {
 if (n < 10) {
-            return n;
+            return String(n);
         }
         else {
-            console.log (Math.floor(n % 10));
-            return numberReverse (Math.floor(n / 10));
+            return String(n % 10 + numberReverse((n - (n % 10)) / 10));
         }
     }
     console.log(numberReverse(1234));
@@ -66,11 +65,11 @@ if (d > 0) {
     let y;
     x = (-b - Math.sqrt(d)) / (2 * a);
     y = (-b + Math.sqrt(d)) / (2 * a);
-    return "2 корня";
+    return "2 корня:\nx = " + x + "\n" + "y = " + y;
 } else if (d == 0) {
     let z;
     z = -b / (2 * a);
-    return "1 корень";
+    return "1 корень:\nz = " + z;
 } else {
     return "Корней нет";
 }
