@@ -8,7 +8,7 @@ let numberOne = +prompt("Введите число");
     function returnLowest (numberOne, numberTwo, numberThree) {
     	if (numberOne <= numberTwo && numberOne <= numberThree) {
     	return numberOne;
-    } if (numberTwo <= numberOne && numberTwo <= numberThree) {
+    } if (numberTwo <= numberThree) {
     	return numberTwo;
     } else {
     	return numberThree;
