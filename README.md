@@ -68,3 +68,7 @@ https://github.com/AdukarIT/DobrovskayaEF/tree/master/tasks2
 Задание к уроку 3. Функции.
 
 https://github.com/AdukarIT/DobrovskayaEF/tree/master/tasks3
+
+Задание к уроку 4. Поиск ошибок и отладка кода. Практика.
+
+https://github.com/AdukarIT/DobrovskayaEF/tree/master/tasks4
