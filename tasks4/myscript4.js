@@ -119,9 +119,9 @@ function getInputSum() {
     let count = 0;
     do {
         sum += +prompt("Введите число");
-        console.log(sum);
         count++;
     } while (sum < 100);
+    console.log(sum);
     return count;
 } 
 
