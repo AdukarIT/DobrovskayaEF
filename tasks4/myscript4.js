@@ -35,16 +35,21 @@ let students = prompt("Введите количество учеников");
 let tables = prompt("Введите количество парт");
 
 function enoughOrNot(students, tables) {
-    if ((students / 2) / tables == 0) {
-        return "Все в порядке";
-}
     if ((students / 2) > tables) {
         let a = Math.floor(students / 2 - (tables / 2));
         return "Недостаточно парт: " + a;
     } 
     if (tables > (students / 2)) {
-        let b = Math.floor(tables - students / 2);
+        let b = Math.floor(tables - students / 2); 
+        if (b !== 0) {
         return "Лишних парт: " + b;
+    }
+    if (b !== 1) {
+    	return "Все в порядке";
+    }
+
+    } else {
+    	return "Все в порядке";
     }
     
 }
