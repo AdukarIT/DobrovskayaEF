@@ -159,7 +159,132 @@ function factorial (n) {
     }
     return factorial(n - 1) * n;
 }
-console.log(factorial(n));*/
-    
+console.log(factorial(n));
+
+
+Урок 6. 
+
+Task 1. Создайте объект obj = {a: 1, b: 2, c: 3}. Выведите в консоль элемент с ключом 'c' двумя способами: через квадратные скобки и через точку. Затем выведите все свойства объекта через цикл for..in.
+
+let obj = {
+	a: 1,
+	b: 2,
+	c: 3
+}
+
+console.log(obj.c);
+
+console.log(obj["c"]);
+
+for (let prop in obj) {
+	console.log(obj[prop]);
+}
+
+
+Task 2. Создайте объект city, добавьте ему свойства name (название города, строка) и population (население, число).
+
+let city = {
+	name: "Минск",
+	population: 2000000
+}
+
+let city1 = {
+	name: "Брест",
+	population: 1000000
+};
+
+let city2 = {
+	name: "Витебк",
+	population: 1500000
+};
+
+let city3 = {
+	name: "Гомель",
+	population: 2000000
+};
+let city4 = {
+	name: "Гродно",
+	population: 1000000
+};
+let city5 = {
+	name: "Могилев",
+	population: 2000000
+};
+
+function getInfo() {
+	return "Город " + this.name + ", население -" + this.population; 
+}
+
+
+Task 3. Создайте массив из шести объектов такого же вида, как city из задачи 2 – по одному для каждого областного города Беларуси.
+
+let cities = [city, city1, city2, city3, city4, city5];
+for (i = 0; i < cities.length; i++) {
+	cities[i].getInfo = getInfo;
+}
+console.log(cities);
+
+Task 4. Напишите функцию, которая принимает массив из задачи 3 в качестве параметра и выводит в консоль информацию о каждом городе.
+
+function all(cities) {
+	for (let i = 0; i < cities.length; i++) {
+		console.log("name " + cities[i].name);
+}
+}
+all(cities);
+
+Task 6. Создайте в объектах с городами из задачи 3 метод getInfo, который возвращает строку с информацией о городе (например, в таком формате: "Город Добруш, население – 18760 человек").
+
+let city = {
+	name: "Минск",
+	population: 2000000
+}
+
+let city1 = {
+	name: "Брест",
+	population: 1000000
+};
+
+let city2 = {
+	name: "Витебк",
+	population: 1500000
+};
+
+let city3 = {
+	name: "Гомель",
+	population: 2000000
+};
+let city4 = {
+	name: "Гродно",
+	population: 1000000
+};
+let city5 = {
+	name: "Могилев",
+	population: 2000000
+};
+
+let cities = [city, city1, city2, city3, city4, city5];
+for (i = 0; i < cities.length; i++) {
+	cities[i].getInfo = getInfo;
+}
+console.log(cities);
+
+
+function getInfo() {
+	return "Город " + this.name + ", население -" + this.population; 
+}
+console.log(city2.getInfo());
+
+Task 7. Создайте объект с информацией о себе (имя, фамилия, любимое занятие). Добавьте в него метод, который выводит эту информацию в консоль в удобочитаемом формате.
+
+let aboutMyself = {
+	name: "Елена",
+	surname: "Добровская",
+	hobby: "Чтение"
+	};
+	aboutMyself.information = function() {
+		console.log("Имя: " + this.name + "." + " Фамилия: " + this.surname + "." + " Увлечение: " + this.hobby);
+        }
+aboutMyself.information();*/
 
 
