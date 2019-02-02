@@ -18,9 +18,7 @@ console.log(squareOfTheHypotenuse (sideOne, sideTwo, hypotenuse));
 
 Task 2. Создайте функцию repeat(str, n), которая возвращает строку, состоящую из n повторений строки str. По умолчанию n=2, str — пустая строка.
 
-let n =2;
-let str = "";
-function repeat(str, n) {
+function repeat(str = "", n = 2) {
     let str1 = "";
     while (n >= 1) {
         str1 = str1 + str;
@@ -293,6 +291,9 @@ function words(n) {
     if (n % 1 !== 0) {
         return "Введенное число - не целое";
     }
+    if (n > 10 && n < 20) {
+    	return n + " карандашей";
+    }
     if (n == 1 || n % 10 == 1) {
         return n + " карандаш";
     }
@@ -308,8 +309,6 @@ console.log(words(1));
 
 
 Task 16. Создайте функцию, которая проверяет, можно ли представить число в виде суммы квадратов двух целых однозначных чисел.
-
-// Функция не работает
 
 function square(n) {
   for (let i = 1; i < 10; i++) {
