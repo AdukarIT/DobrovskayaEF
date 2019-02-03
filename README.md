@@ -72,3 +72,7 @@ https://github.com/AdukarIT/DobrovskayaEF/tree/master/tasks3
 Задание к уроку 4. Поиск ошибок и отладка кода. Практика.
 
 https://github.com/AdukarIT/DobrovskayaEF/tree/master/tasks4
+
+Задание к уроку 6. Объекты.
+
+https://github.com/AdukarIT/DobrovskayaEF/tree/master/tasks5
