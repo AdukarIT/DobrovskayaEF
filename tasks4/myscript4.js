@@ -66,32 +66,24 @@ switch (marks) {
     case "":
     case 0:
     return false;
-    break;
     case 1:
     case 2:
     return "Unsatisfactory";
-    break;
     case 3:
     case 4:
     return "Satisfactory";
-    break;
     case 5:
     return "Almost good";
-    break;
     case 6:
     return "Good";
-    break;
     case 7:
     return "Very good";
-    break;
     case 8:
     return "Almost excellent";
     case 9:
     return "Excellent";
-    break;
     case 10:
     return "Brilliant";
-    break;
     default:
     return "Оценка не введена";
 }
