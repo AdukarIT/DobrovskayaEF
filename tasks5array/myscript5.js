@@ -84,7 +84,7 @@ function bubble(array) {
         } 
     }
   return array;
- };
+ }
 
 console.log(bubble(getRandomArray(12)));
 
