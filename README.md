@@ -73,6 +73,10 @@ https://github.com/AdukarIT/DobrovskayaEF/tree/master/tasks3
 
 https://github.com/AdukarIT/DobrovskayaEF/tree/master/tasks4
 
+Задание к уроку 5. Массивы.
+
+https://github.com/AdukarIT/DobrovskayaEF/tree/master/tasks5array
+
 Задание к уроку 6. Объекты.
 
 https://github.com/AdukarIT/DobrovskayaEF/tree/master/tasks5
