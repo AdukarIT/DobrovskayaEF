@@ -64,5 +64,29 @@ function sum(array1, array2) {
 }
 console.log(sum(getRandomArray(12), getRandomArray(12)));
 
+Task 6.
 
+function bubble(array) {
+	array = getRandomArray(12);
+    let temp; 
+    for (let i = array.length - 1; i > 0; i--) {  
+        let count = 0;
+        for (let j = 0; j < i; j++) {
+            if (array[j] > array[j + 1]) {
+                temp = array[j];
+                array[j] = array[j + 1];
+                array[j + 1] = temp;
+                count++;
+            }
+        }  
+        if (count == 0) {
+          break;
+        } 
+    }
+  return array;
+ };
+
+console.log(bubble(getRandomArray(12)));
+
+*/
 
