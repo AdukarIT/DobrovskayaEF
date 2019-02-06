@@ -1,9 +1,9 @@
 /*Task 1.
 
 function getRandomArray(len) {
-	let array = [0.1, 0.2, 0.3, 1, 3, 5, 4, 8, 12, 18, 25, 50];
+	let array = [];
 	for (let i = 0; i < len; i++) {
-		array[i] = Math.floor(Math.random());
+		array[i] = Math.floor(Math.random() * len);
 		return array;
 
 	}
