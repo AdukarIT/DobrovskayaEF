@@ -287,4 +287,160 @@ let aboutMyself = {
         }
 aboutMyself.information();*/
 
+Урок 7.
 
+Task 1. Напишите функцию, которая создаёт и возвращает массив длиной 20 элементов, каждый из которых – случайное число от 1 до 50.
+
+function getRandomArray(len) {
+    let array = [];
+    for (let i = 0; i < len; i++) {
+        array[i] = Math.floor(Math.random() * 50);  
+    } return array;
+} 
+console.log(getRandomArray(20));
+
+
+Task 2. Перепишите функцию из задачи 1, так, чтобы она принимала три аргумента: длину нужного массива, минимальное и максимальное значения элементов.
+
+function getRandomArray(len, min, max) {
+    let array = [];
+    for (let i = 0 && i >= min; i < len; i++) {
+        array[i] = Math.floor(Math.random() * max);  
+    } return array;
+}
+console.log(getRandomArray(10, 0, 10));
+
+
+Task 3. Напишите функцию, которая проверяет, начинается ли строка на https:// и заканчивается ли она на .html. Если оба условия выполнены, функция возвращает true, в ином случае – false.
+
+function startEnd() {
+ let str = "https://.html"
+ let start = "https://";
+ let end = ".html";
+  if ((str.substring(0, start.length) == start) && (str.substring(str.length - end.length, str.length) == end)) {
+    return true;
+  }
+  else {
+    return false;
+ }
+}
+console.log(startEnd());
+
+
+Task 4. Напишите функцию, которая считает, сколько раз определённый символ встречается в строке.
+
+function count(str, symb) {
+    let sum = 0;
+    let index = 0;
+    if (!symb) {
+        return 0;
+    }
+    while ((index = str.indexOf(symb)) >= 0) {
+        str = str.substring(index + symb.length);
+        sum++;
+    }
+    return sum;
+}
+
+ console.log(count("jsadffFFFFFffgflak", "f"));
+
+
+Task 5. Перепишите функцию из задачи 4 так, чтобы она считала большие и маленькие буквы одним и тем же символом (например, 'A' == 'a').
+
+function count(str, symb) {
+    let sum = 0;
+    let index = 0;
+    if (!symb) {
+        return 0;
+    }
+    while ((index = str.indexOf(symb)) >= 0) {
+        str = str.substring(index + symb.length);
+        sum++;
+    }
+    return sum;
+}
+
+ console.log(count("jsadffFFFFFffgflak".toLowerCase(), "f"));
+
+
+Task 6. Напишите функцию, которая выводит в консоль текущие дату, месяц и год в формате «24 января 2019».
+
+function getData() {
+    let d = new Date();
+    let day = d.getDate();
+    let month = d.getMonth();
+    let year = d.getFullYear();
+    switch (month) {
+        case 0: 
+        month = "января";
+        break;
+        case 1:
+        month = "февраля";
+        break;
+        case 2:
+        month = "марта";
+        break;
+        case 3:
+        month = "апреля";
+        break;
+        case 4: 
+        month = "мая";
+        break;
+        case 5:
+        month = "июня";
+        break;
+        case 6:
+        month = "июля";
+        break;
+        case 7:
+        month = "августа";
+        break;
+        case 8:
+        month = "сентября";
+        break;
+        case 9:
+        month = "октября";
+        break;
+        case 10:
+        month = "ноября";
+        break;
+        case 11: 
+        month = "декабря";
+        break;
+        default:
+        break;
+    }
+    console.log(day + " " + month + " " + year);
+}
+getData();
+
+
+Task 7. Напишите функцию, которая выводит в консоль количество секунд, прошедших с начала текущего дня.
+
+function secondsToday() {
+  let now = new Date();
+  let today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  let difference = now - today;
+  return Math.floor(difference / 1000);
+}
+console.log(secondsToday());
+
+
+Task 8. Напишите функцию, которая принимает от пользователя строку. Если эта строка не содержит буквы «ф», сгенерируйте собственную ошибку. Вызовите функцию так, чтобы при возникновении «поймать» ошибку в try/catch. 
+
+function message(symb) {
+    let str = prompt("Введите данные");
+    if (!(str.indexOf(symb) !== -1)) {
+        throw new Error ("Нет такого символа");
+    }
+    try {
+        if (str.indexOf(symb) !== -1) {
+            console.log("Есть такой символ"); 
+        }
+    }
+    catch (e) {
+        console.log(e.message);
+    }
+}
+message("ф");
+*/
