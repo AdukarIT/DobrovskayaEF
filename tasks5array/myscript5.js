@@ -3,27 +3,25 @@
 function getRandomArray(len) {
 	let array = [];
 	for (let i = 0; i < len; i++) {
-		array[i] = Math.floor(Math.random() * len);
+		array[i] = (Math.random() * 2);
 	} return array;
 } 
 console.log(getRandomArray(12));
 
 Task 2.
 
-let averageArithmetic;
-
 function average(len) {
-	getRandomArray(12);
-	if (len == 0) {
-		return 0;
-	}
-	let sum = 0;
-	for (let i = 0; i < len; i++) {
-		sum += Math.floor(Math.random() * len);
-		averageArithmetic = sum / len;
-	}
-	return averageArithmetic;
-}
+  let arr = getRandomArray(12);
+  if (len == 0) {
+    return 0;
+  }
+  let sum = 0;
+  for (let i = 0; i < len; i++) {
+    sum += Math.floor(arr[i]);
+  }
+  let averageArithmetic = sum / len;
+  return averageArithmetic;
+} 
 console.log(average(12));
 
 
@@ -65,7 +63,7 @@ console.log(sum(getRandomArray(12), getRandomArray(12)));
 Task 6.
 
 function bubble(array) {
-	array = getRandomArray(12);
+	let array = getRandomArray(12);
     let temp; 
     for (let i = array.length - 1; i > 0; i--) {  
         let count = 0;
