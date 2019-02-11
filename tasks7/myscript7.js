@@ -92,8 +92,8 @@ Task 7.
 
 function changeStar(str) {
 	for (let i = 0; i < str.length - 1; i++) {
-		for (var j = i + 1; j < str.length; j++) {
-			if (str[i] === str[j]) {
+		for (let j = i + 1; j < str.length; j++) {
+			if (str[i] === str[j] && str[j] != "*" && str[j] != " ") {
 				str = str.slice(0, j) + "*" + str.slice(j + 1, str.length);
 			}
 		}
