@@ -36,7 +36,7 @@ let tables = prompt("Введите количество парт");
 
 function enoughOrNot(students, tables) {
     if ((students / 2) > tables) {
-        let a = Math.floor(students / 2 - (tables / 2));
+        let a = Math.ceil(students / 2 - tables);
         return "Недостаточно парт: " + a;
     } 
     if (tables > (students / 2)) {
@@ -46,8 +46,6 @@ function enoughOrNot(students, tables) {
     }
     if (b !== 1) {
     	return "Все в порядке";
-    }
-
     } else {
     	return "Все в порядке";
     }
@@ -288,7 +286,7 @@ function words(n) {
     if (n % 1 !== 0) {
         return "Введенное число - не целое";
     }
-    if (n > 10 && n < 20) {
+    if (n > 10 && n < 20 || n % 100 > 10 && n % 100 < 20) {
     	return n + " карандашей";
     }
     if (n == 1 || n % 10 == 1) {
@@ -302,7 +300,7 @@ function words(n) {
     }
 }
 
-console.log(words(1));
+console.log(words(112));
 
 
 Task 16. Создайте функцию, которая проверяет, можно ли представить число в виде суммы квадратов двух целых однозначных чисел.
