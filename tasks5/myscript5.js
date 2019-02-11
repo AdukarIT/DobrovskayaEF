@@ -5,12 +5,13 @@ Task 1.
 let obj = {};
 
 function test(obj, string) {
-	for (let string in obj) {
-	console.log(string);
+	if (string in obj) {
+	return true;
+} else {
+	return false;
 }
 }
-
-test();
+console.log(test(obj, string));
 
 
 Task 2.
