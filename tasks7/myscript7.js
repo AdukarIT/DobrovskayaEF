@@ -190,4 +190,17 @@ whatADay();
 
 
 Task 10.
+
+function whatADay() {
+	let userDate = prompt("Введите дату dd-mm-yyyy");
+	let first = new Date(+userDate.slice(6, 10), +userDate.slice(3, 5) - 1, +userDate.slice(0, 2));
+	let second = new Date();
+	var third = new Date(second.getFullYear(), +userDate.slice(3, 5) - 1, +userDate.slice(0, 2));
+	let before = Math.round((third - second) / 1000 / 60 / 60 / 24);
+	console.log(before + " дней до ближайшего дня рождения");
+	let celebration = Math.round((second - first) / 1000 / 3600 / 24 / 365);
+	let a = Math.round(100 - celebration);
+	console.log(a + " лет всего-то осталось до Вашего 100-летнего юбилея!");
+}
+whatADay();
 */
