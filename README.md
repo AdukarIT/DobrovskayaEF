@@ -83,4 +83,4 @@ https://github.com/AdukarIT/DobrovskayaEF/tree/master/tasks5
 
 Задание к уроку 7. Встроенные возможности JavaScript.
 
-https://github.com/AdukarIT/DobrovskayaEF/blob/master/tasks7/myscript7.js
+https://github.com/AdukarIT/DobrovskayaEF/tree/master/tasks7
