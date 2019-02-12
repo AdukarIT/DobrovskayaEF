@@ -203,4 +203,31 @@ function whatADay() {
 	console.log(a + " лет всего-то осталось до Вашего 100-летнего юбилея!");
 }
 whatADay();
+
+
+Task 11.
+
+function sqrt(n) {
+	try {
+		if (Math.sqrt(n) == Math.round(Math.sqrt(n))) {
+			console.log(Math.sqrt(n));
+		} else {
+			throw new Error("Из "+ n + " нет корней");
+		}
+	} catch (e) {
+		console.log(e.message);
+	}
+}
+sqrt();
+
+function getRandomArray(len, min, max) {
+    let array = [];
+    for (let i = 0 && i >= min; i < len; i++) {
+        array[i] = Math.floor(Math.random() * max);  
+    } console.log(array);
+    for (let i = 0; i < array.length; i++) {
+    	array[i] = sqrt(array[i]);
+    }
+}
+getRandomArray(8, 1, 8);
 */
