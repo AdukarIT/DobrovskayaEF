@@ -47,8 +47,9 @@ console.log(newArray(getRandomArray(10, 0, 10)));
 Task 3.
 
 function palindrome(str) {
-    for (let i = 0; i < str.length / 2; i++) {
-        if (str.charAt(i) !== str.charAt(str.length - 1 - i)) {
+	let result = str.split(' ').join('');
+    for (let i = 0; i < result.length / 2; i++) {
+        if (result.charAt(i) !== result.charAt(result.length - 1 - i)) {
             return false;
         }
     }
