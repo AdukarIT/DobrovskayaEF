@@ -83,12 +83,26 @@ console.log(change("Галактика", "ка", "ческий"));
 
 Task 6.
 
+function firstUpper(str){
+	let res = "";
+	for (let i = 0; i < str.length; i++) {
+		if (i == 0 || str.charAt(i) !== " " && str.charAt(i - 1) == " ") {
+			res += str[i].toUpperCase();
+		} else {
+			res += str.charAt(i);
+		}
+ }
+ return res;
+}
+console.log(firstUpper("все слова с большой буквы"));
+
+/* альтернатива
 function firstUpper(str) {
 	return str.replace(/(^|\s)\S/g, function(a) {return a.toUpperCase()})
 }
 console.log(firstUpper("все слова с большой буквы"));
-
-
+*/
+/*
 Task 7.
 
 function changeStar(str) {
