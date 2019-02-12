@@ -226,7 +226,7 @@ function getRandomArray(len, min, max) {
         array[i] = Math.floor(Math.random() * max);  
     } console.log(array);
     for (let i = 0; i < array.length; i++) {
-    	array[i] = sqrt(array[i]);
+    	array[i] = sqrt(array[i];
     }
 }
 getRandomArray(8, 1, 8);
