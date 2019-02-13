@@ -285,7 +285,7 @@ let aboutMyself = {
 	aboutMyself.information = function() {
 		console.log("Имя: " + this.name + "." + " Фамилия: " + this.surname + "." + " Увлечение: " + this.hobby);
         }
-aboutMyself.information();*/
+aboutMyself.information();
 
 Урок 7.
 
@@ -443,4 +443,67 @@ function message(symb) {
     }
 }
 message("ф");
+
+Урок 8. Напишите функцию counterFactory(start, step), которая при вызове возвращает другую функцию – счётчик tictoc(). start – стартовое значение счётчика, step – его шаг. При каждом вызове tictoc увеличивает значение счётчика на step.
+
+
+Task 1.
+
+function counterFactory(start, step) {
+    let count = 0;
+    count = start;
+    return function tictoc() {
+        count = count + step;
+        return count;
+    }
+    return tictoc;
+}
+
+let newCount = counterFactory(1, 5);
+
+console.log(newCount()); // 6
+console.log(newCount()); // 11
+console.log(newCount()); // 16
+
+
+Task 2. Напишите функцию take(tictoc, x), которая вызывает функцию tictoc заданное число (x) раз и возвращает массив с результатами вызовов.
+
+function take(tictoc, x) {
+    let array = [];
+    for (let i = 0; i < x; i++) {
+        array.push(tictoc);
+    }
+    return array;
+}
+console.log(take(1, 5));
+
+Task 3. Разбейте текст этой задачи на отдельные слова, удаляя по пути точки и запятые, а полученные слова сложите в массив. Напишите функцию, которая возвращает массив из тех же слов, но развёрнутых задом наперёд, причём массив должен быть отсортирован по количеству букв в слове. Напишите другую функцию, которая считает общее количество букв с во всех элементах массива.
+
+// пока нет решения
+
+
+Task 4.
+
+Дан код:
+let obj = { greeting: "Привет" };
+function func(surname, name) {
+alert(this.greeting + ', ' + surname + ' ' + name);
+}
+func();  // тут должно вывести 'привет, Иванов Иван'
+Добавьте в последнюю строчку метод call() так, чтобы на экран вывелось 'Привет, Иванов Иван'. Слово 'привет' возьмите из свойства объекта obj, а 'Иванов' и 'Иван' задайте как параметры функциями.
+
+let obj = { greeting: "Привет" };
+function func(surname, name) {
+alert(obj.greeting + ', ' + surname + ' ' + name);
+}
+func.call(obj, "Иванов", "Иван");
+
+
+Task 5. Перепишите задачу так, чтобы вместо call применялся apply.
+
+let obj = { greeting: "Привет" };
+function func(surname, name) {
+alert(obj.greeting + ', ' + surname + ' ' + name);
+}
+func.apply(obj, new Array("Иванов", "Иван"));
 */
