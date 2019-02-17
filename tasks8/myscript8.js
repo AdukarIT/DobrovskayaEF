@@ -26,4 +26,67 @@ function task(str) {
     console.log(result);
 }
 task("Разбейте текст этой задачи на отдельные слова, удаляя по пути точки и запятые, а полученные слова сложите в массив. Напишите функцию, которая возвращает массив из тех же слов, но развёрнутых задом наперёд, причём массив должен быть отсортирован по количеству букв в слове. Напишите другую функцию, которая считает общее количество букв с во всех элементах массива.");
+
+Task 3. 
+
+let stateCalifornia = data.filter(
+	function(item) {
+	return item.state === "California" && parseInt(item.growth_from_2000_to_2013) > 0
+});
+console.log(stateCalifornia);
+
+Task 4.
+
+data.forEach(function(item) {
+	if (parseInt(Math.ceil(item.latitude)) >=25 && parseInt(Math.ceil(item.latitude)) <= 30) {
+		let sum = 0;
+		for (let i = 1; i < data.length; i++) {
+			sum = sum + parseInt(data[i].population);
+		} 
+		console.log(sum / 1000000 + " millions")
+	}
+});
+
+
+Task 5.
+
+let cityD = data.filter(
+	function(item) {
+		if (item.city[0] === "D") {
+			return data.sort(function (a, b) {
+				if (a.city[1] < b.city[1]) {
+					return -1;
+				}
+				else {
+					return 1;
+				}
+			}); 
+		}
+	});		
+console.log(cityD);
+
+
+Task 6.
+
+function massive() {
+	let states = {};	
+	let newObject = data.forEach(function(item) {
+		if (!(states[item.state])) {
+			states[item.state] = [];
+			states[item.state][0] = {
+				"city": item.city,
+				"population": item.population,
+				"rank": item.rank
+			};
+		} else {
+			states[item.state].push({
+				"city": item.city,
+				"population": item.population,
+				"rank": item.rank
+			});
+		}  
+	});
+	return states;
+}
+console.log(massive());
 */
