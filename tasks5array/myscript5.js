@@ -84,5 +84,19 @@ function bubble(array) {
 
 console.log(bubble(getRandomArray(12)));
 
+
+Task 7.
+
+function summ() {
+	let arr = getRandomArray(12);
+	for (let i = 0; i < arr.length - 1; i++) {
+		for (let j = i + 1; j < arr.length; j++) {
+			if (Math.fround(arr[i] + arr[j]) >= 0.999 && Math.fround(arr[i] + arr[j]) <= 1.001) {
+				return arr[i] + " и " + arr[j];
+			}
+		};
+	};
+}
+console.log(summ());
 */
 
