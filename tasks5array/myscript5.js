@@ -37,17 +37,17 @@ function minOneTwo(array) {
 minOneTwo(getRandomArray(12));
 
 Task 4.
-// пока не знаю, как решить
-function remove(array) {
-  getRandomArray(12);
+
+function remove3() {
+  let array = getRandomArray(12);
   for(let i = 0; i < array.length; i++) {
     if (array[i] < 0.3) {
-    array[i] = 0;
+    	array.splice(i, 1);
+    	array.push(0);
     }
-  }
-  return array;
+  } return array;
 }
-console.log(remove(getRandomArray(12)));
+console.log(remove3());
 
 Task 5.
 
