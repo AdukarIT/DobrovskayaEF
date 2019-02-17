@@ -54,7 +54,7 @@ let cityD = data.filter(
 	function(item) {
 		if (item.city[0] === "D") {
 			return data.sort(function (a, b) {
-				if (a.city[1] < b.city[1]) {
+				if (a.city < b.city) {
 					return -1;
 				}
 				else {
