@@ -63,8 +63,10 @@ table.appendChild(tr);
 };
 createTable();
 
+table.addEventListener("onclick", changeByClick());
+
 function changeByClick() {
-table.click = function() {
+table.onclick = function() {
 	if(table.classList.contains("highlight")) {
 		table.classList.replace("highlight", "bordered");
 	} else if (table.classList.contains("bordered")) {
@@ -75,12 +77,94 @@ table.click = function() {
 }
 };
 }
-changeByClick();
 console.log(table.classList);
-table.click();
 console.log(table.classList);
-table.click();
 console.log(table.classList);
-table.click();
+
+
+Task 3.
+
+function createTable() {
+table = document.getElementById("newtable"); 
+table.setAttribute("border", 1);
+tr = document.createElement("TR"); 
+td = document.createElement("TD"); 
+td.setAttribute("rowspan", 1);  
+td.appendChild(document.createTextNode("1 ячейка")); 
+tr.appendChild(td); 
+td = document.createElement("TD"); 
+td.setAttribute("colspan", 1);  
+td.appendChild(document.createTextNode("2 ячейка")); 
+tr.appendChild(td); 
+td = document.createElement("TD"); 
+table.appendChild(tr);
+tr = document.createElement("TR"); 
+td = document.createElement("TD"); 
+td.appendChild(document.createTextNode("3 ячейка")); 
+tr.appendChild(td); 
+td = document.createElement("TD"); 
+td.appendChild(document.createTextNode("4 ячейка")); 
+tr.appendChild(td); 
+table.appendChild(tr);
+};
+createTable();
+
+    let parent = document.getElementsByTagName("BODY")[0];
+    let firstInput = document.createElement("input");
+    firstInput.style.width = "100px";
+    firstInput.style.height = "20px";
+    firstInput.style.background = "red";
+    parent.appendChild(firstInput);
+    let secondInput = document.createElement("input");
+    secondInput.style.width = "100px";
+    secondInput.style.height = "20px";
+    secondInput.style.background = "yellow";
+    parent.appendChild(secondInput);
+    let thirdInput = document.createElement("input");
+    thirdInput.style.width = "100px";
+    thirdInput.style.height = "20px";
+    thirdInput.style.background = "green";
+    parent.appendChild(thirdInput);
+
+
+firstInput.addEventListener("onclick", changeByClick()); 
+secondInput.addEventListener("onclick", changeByClick()); 
+thirdInput.addEventListener("onclick", changeByClick()); 
+
+function changeByClick() {
+firstInput.onclick = function() {
+	if(table.classList.contains("highlight")) {
+		table.classList.replace("highlight", "bordered");
+	} else if (table.classList.contains("bordered")) {
+		table.classList.replace("bordered", "striped");
+	} else if (table.classList.contains("striped")) {
+		table.classList.replace("striped", "highlight");
+	} else {table.classList.add("bordered");
+}
+};
+secondInput.onclick = function() {
+	if(table.classList.contains("highlight")) {
+		table.classList.replace("highlight", "bordered");
+	} else if (table.classList.contains("bordered")) {
+		table.classList.replace("bordered", "striped");
+	} else if (table.classList.contains("striped")) {
+		table.classList.replace("striped", "highlight");
+	} else {
+	        table.classList.add("bordered");
+}
+};
+thirdInput.onclick = function() {
+	if(table.classList.contains("highlight")) {
+		table.classList.replace("highlight", "bordered");
+	} else if (table.classList.contains("bordered")) {
+		table.classList.replace("bordered", "striped");
+	} else if (table.classList.contains("striped")) {
+		table.classList.replace("striped", "highlight");
+	} else {table.classList.add("bordered");
+}
+};
+}
+console.log(table.classList);
+console.log(table.classList);
 console.log(table.classList);
 */
