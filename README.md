@@ -88,3 +88,11 @@ https://github.com/AdukarIT/DobrovskayaEF/tree/master/tasks7
 Задание к уроку 8. Продвинутый JavaScript.
 
 https://github.com/AdukarIT/DobrovskayaEF/tree/master/tasks8
+
+Задание к уроку 9. DOM. Работа со страницей.
+
+https://github.com/AdukarIT/DobrovskayaEF/tree/master/tasks9
+
+Задание к уроку 10. События. Координаты на странице.
+
+https://github.com/AdukarIT/DobrovskayaEF/tree/master/tasks10
