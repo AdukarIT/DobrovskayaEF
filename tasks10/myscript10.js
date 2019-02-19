@@ -160,4 +160,35 @@ thirdInput.onclick = function() {
 console.log(table.classList);
 console.log(table.classList);
 console.log(table.classList);
+
+
+Task 4.
+
+let parent = document.getElementsByTagName("BODY")[0];
+    let buttonOn = document.createElement("button");
+    buttonOn.style.width = "120px";
+    buttonOn.style.height = "20px";
+    buttonOn.style.background = "yellow";
+    let buttonOnText = "Кнопка ON";
+    let buttonOnTextNode = document.createTextNode(buttonOnText);
+    parent.appendChild(buttonOn);
+    buttonOn.appendChild(buttonOnTextNode);
+    let buttonOff = document.createElement("button");
+    buttonOff.style.width = "120px";
+    buttonOff.style.height = "20px";
+    buttonOff.style.background = "red";
+    let buttonOffText = "Кнопка OFF";
+    let buttonOffTextNode = document.createTextNode(buttonOffText);
+    parent.appendChild(buttonOff);
+    buttonOff.appendChild(buttonOffTextNode);
+
+buttonOn.addEventListener("click", cancel);
+ 
+function cancel() {
+	alert(this.innerHTML);
+}
+
+buttonOff.onclick = function() {
+	buttonOn.removeEventListener("click", cancel);
+};
 */
