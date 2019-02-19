@@ -111,21 +111,14 @@ createTable();
 
     let parent = document.getElementsByTagName("BODY")[0];
     let firstInput = document.createElement("input");
-    firstInput.style.width = "100px";
-    firstInput.style.height = "20px";
-    firstInput.style.background = "red";
+    firstInput.setAttribute("type", "radio");
     parent.appendChild(firstInput);
     let secondInput = document.createElement("input");
-    secondInput.style.width = "100px";
-    secondInput.style.height = "20px";
-    secondInput.style.background = "yellow";
+    secondInput.setAttribute("type", "radio");
     parent.appendChild(secondInput);
     let thirdInput = document.createElement("input");
-    thirdInput.style.width = "100px";
-    thirdInput.style.height = "20px";
-    thirdInput.style.background = "green";
+    thirdInput.setAttribute("type", "radio");
     parent.appendChild(thirdInput);
-
 
 firstInput.addEventListener("onclick", changeByClick()); 
 secondInput.addEventListener("onclick", changeByClick()); 
