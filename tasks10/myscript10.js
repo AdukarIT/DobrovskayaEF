@@ -230,16 +230,16 @@ let parent = document.getElementsByTagName("BODY")[0];
 
 parent.onclick = function(event) {
 	let target = event.target;	
-		if (target.tagName == 'A') {
+		if (target.tagName == "A") {
 			console.log(target.type);
 			return;
-		} if (target.tagName == 'P') {
+		} if (target.tagName == "P") {
 			console.log(target.type);
 			return;
-		} if (target.tagName == 'DIV') {
+		} if (target.tagName == "DIV") {
 			console.log(target.type);
 			return;
-		} if (target.tagName == 'BUTTON') {
+		} if (target.tagName == "BUTTON") {
 			console.log(target.type);
 		}
 	}
