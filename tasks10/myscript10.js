@@ -191,4 +191,56 @@ function cancel() {
 buttonOff.onclick = function() {
 	buttonOn.removeEventListener("click", cancel);
 };
+
+
+Task 5.
+
+let parent = document.getElementsByTagName("BODY")[0];
+	let firstDiv = document.createElement("div");
+	firstDiv.classList.add("www");
+    let text = "Див";
+    let textNode = document.createTextNode(text);
+    firstDiv.style.width = "100px";
+    firstDiv.style.height = "100px";
+    let firstP = document.createElement("p");
+	firstP.classList.add("wwwp");
+    let pText = "Параграф";
+    let pTextNode = document.createTextNode(pText);
+    firstP.style.width = "100px";
+    firstP.style.height = "100px";
+    let button = document.createElement("button");
+    button.style.width = "100px";
+    button.style.height = "20px";
+    button.style.background = "yellow";
+    let buttonText = "Кнопка";
+    let buttonTextNode = document.createTextNode(buttonText);
+    let firstA = document.createElement("a");
+	firstA.classList.add("wwwa");
+	firstA.type = "text";
+    let aText = "Ссылка";
+    let aTextNode = document.createTextNode(aText);
+    firstDiv.appendChild(textNode);
+    parent.appendChild(firstDiv);
+    parent.appendChild(button);
+    button.appendChild(buttonTextNode);
+    firstP.appendChild(pTextNode);
+    parent.appendChild(firstP);
+    firstA.appendChild(aTextNode);
+    parent.appendChild(firstA);
+
+parent.onclick = function(event) {
+	let target = event.target;	
+		if (target.tagName == 'A') {
+			console.log(target.type);
+			return;
+		} if (target.tagName == 'P') {
+			console.log(target.type);
+			return;
+		} if (target.tagName == 'DIV') {
+			console.log(target.type);
+			return;
+		} if (target.tagName == 'BUTTON') {
+			console.log(target.type);
+		}
+	}
 */
