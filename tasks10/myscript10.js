@@ -243,4 +243,37 @@ parent.onclick = function(event) {
 			console.log(target.type);
 		}
 	}
+
+Task 6.
+
+let dogPicture = document.createElement("img");
+dogPicture.src = "https://dogslekub.ru/images/776.jpg";
+
+function exchange() {
+	let img = document.images.kitty;
+	let defaultImage = img.src;
+	img.onmouseover = function () {
+		img.src = dogPicture.src;
+	}
+	img.onmouseout = function () {
+		img.src = defaultImage;
+	}
+}
+exchange();
+
+
+Task 7.
+
+let overlay;
+
+function popup() {
+	let greyColor = document.createElement("div");
+	greyColor.id = "dark";
+	document.body.appendChild(greyColor);
+	overlay = window.open("http://www.playcast.ru/uploads/2015/03/27/12847720.png",
+   "", "resizable = yes, top = 50%, left = 50%, width = 400, height = 400");
+	greyColor.onclick = function () {
+		greyColor.parentNode.removeChild(greyColor);
+	};
+};
 */
