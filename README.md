@@ -96,3 +96,11 @@ https://github.com/AdukarIT/DobrovskayaEF/tree/master/tasks9
 Задание к уроку 10. События. Координаты на странице.
 
 https://github.com/AdukarIT/DobrovskayaEF/tree/master/tasks10
+
+Задание к уроку 11. Формы.
+
+https://github.com/AdukarIT/DobrovskayaEF/tree/master/tasks11
+
+Задание к уроку 12. ООП в Javascript.
+
+https://github.com/AdukarIT/DobrovskayaEF/tree/master/tasks12
