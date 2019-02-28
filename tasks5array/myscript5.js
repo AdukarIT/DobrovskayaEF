@@ -100,6 +100,26 @@ function summ() {
 console.log(summ());
 
 
+Task 8.
+
+function maxNumbers() {
+	let array = getRandomArray(12);
+	let arr = new Array(array.length);
+	console.log(array);
+	for (let i = 0; i < array.length; i++) {
+		let count = 1;
+		for (let j = 0; j < array.length; j++) {
+		if (array[j] > array[i]) {
+			count++;
+			}
+		}
+		arr[i] = count;
+	}
+	console.log(arr);
+}
+maxNumbers();
+
+
 Task 9.
 
 function right(x) {
