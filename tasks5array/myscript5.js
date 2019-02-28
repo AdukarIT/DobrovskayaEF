@@ -98,5 +98,15 @@ function summ() {
 	};
 }
 console.log(summ());
+
+
+Task 9.
+
+function right(x) {
+    let array = [1, 2, 3, 4, 5, 6, 7, 8];
+    array = array.concat(array.splice(0, array.length - x));
+    	console.log(array);
+    }
+right(1);
 */
 
