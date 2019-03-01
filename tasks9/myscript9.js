@@ -76,6 +76,17 @@ before.previousElementSibling.innerHTML += "!";
 
 
 Task 6.
+
+function wrapInParagraph() {
+	let wrapper = document.createElement("p");
+	let div = document.getElementById("block");
+	let divText = div.firstChild;
+	div.insertBefore(wrapper, divText);
+	wrapper.appendChild(divText);
+}
+
+wrapInParagraph();
+console.log(document.getElementById("block"));
 */
 
 
