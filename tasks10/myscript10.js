@@ -1,4 +1,79 @@
-/*
+/* Practice
+Task 1. Сделайте так, чтобы по нажатию на кнопку выводился alert.
+
+btn.onclick = function() {
+	alert("Привет!");
+}
+
+
+Task 2. Создайте кнопку с произвольным текстом, сделайте так, чтобы по нажатию текст изменялся на button.
+
+document.getElementById("practice").addEventListener("click",
+	function() {
+		this.value = "К";
+	});
+
+
+Task 3. Создайте форму с полем для ввода и двумя кнопками, сделайте так, чтобы по нажатию на кнопку disable, поле становилось неактивным, в случае с enable - наоборот.
+
+let input = document.getElementById("switching");
+
+let enable = input.nextElementSibling;
+let disable = enable.nextElementSibling;
+
+enable.addEventListener("click", function() {
+	document.getElementById("switching").disabled = false;
+});
+
+disable.addEventListener("click", function() {
+	document.getElementById("switching").disabled = true;
+});
+
+
+Task 4. Нужно создать документ с полем ввода, объектом произвольной формы и цвета. Сделайте так, чтобы в поле ввода можно было вводить только числовые значения, а объект можно было двигать и узнавать его координаты на странице.
+
+
+
+Task 5. Выведите координаты мыши относительно блока в момент движения курсора мыши внутри блока. Координаты выводить под блоком.
+
+function position(e) {
+    document.getElementById("div").onmousemove = function(e) {
+    	let msg = document.getElementById("message");
+			msg.innerText = event.clientX+':'+event.clientY;
+    }
+}
+position(document.getElementById("div"));
+
+
+Task 6. Создайте блок div, в качестве изображения фона установите ему изображение закрытой папки. Добавьте событие, которое выполняется при двойном клике на блоке и заменяет фон блока на изображение открытой папки.
+
+let change = document.getElementById("folder");
+change.ondblclick = function() {
+	change.style.backgroundImage = "url(http://www.pkicon.com/icons/38870/Folder-open-256.png)";
+};
+
+
+Task 7. Добавьте в документ 300-400 блоков div квадратной формы с размерами сторон 30px, и цветом фона. Добавление элементов выполните с помощью цикла. Добавьте событие при наведении мыши, которое будет скруглять данные блоки с помощью border-radius до круга. Для замедления эффекта скругления в CSS можно добавить transition.
+
+let divFirst = document.getElementById("divFirst");
+let element = document.createElement("div");
+element.style.width = "30px";
+element.style.height = "30px";
+element.style.background = "yellow";
+element.style.margin = "15px 15px 15px 15px";
+element.style.transition = "all 1s";
+
+for (let i = 0; i < 400; ++i) {
+	element = divFirst.appendChild(element.cloneNode(true));
+	element.onmouseenter = function(e) {
+		e.target.style.borderRadius = "50%";
+	};
+	element.onmouseleave = function(e) {
+		e.target.style.borderRadius = "0%";
+	}
+}
+
+
 Task 1.
 
 function create() {
