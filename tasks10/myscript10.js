@@ -65,10 +65,10 @@ element.style.transition = "all 1s";
 
 for (let i = 0; i < 400; ++i) {
 	element = divFirst.appendChild(element.cloneNode(true));
-	element.onmouseenter = function(e) {
+	element.onmouseover = function(e) {
 		e.target.style.borderRadius = "50%";
 	};
-	element.onmouseleave = function(e) {
+	element.onmouseout = function(e) {
 		e.target.style.borderRadius = "0%";
 	}
 }
