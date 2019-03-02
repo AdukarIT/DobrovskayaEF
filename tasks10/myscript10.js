@@ -32,6 +32,36 @@ disable.addEventListener("click", function() {
 
 Task 4. Нужно создать документ с полем ввода, объектом произвольной формы и цвета. Сделайте так, чтобы в поле ввода можно было вводить только числовые значения, а объект можно было двигать и узнавать его координаты на странице.
 
+let input = document.getElementById("onlyNumbers");
+input.onkeypress = function(event) {
+	if(event.keyCode < 48 || event.keyCode > 57) {
+		return false;
+	}
+}
+
+let divMove = document.getElementById("divMove");
+divMove.onmousedown = function(e) {
+	divMove.style.position = "absolute";
+	moveAt(e);
+	document.body.appendChild(divMove);
+	divMove.style.zIndex = 1000;
+
+	function moveAt(e) {
+		divMove.style.left = e.pageX - divMove.offsetWidth / 2 + "px";
+		divMove.style.top = e.pageY - divMove.offsetHeight / 2 + "px";
+	}
+
+	document.onmousemove = function(e) {
+		moveAt(e);
+	}
+
+	divMove.onmouseup = function() {
+		let msg1 = document.getElementById("message1");
+		msg1.innerText = event.clientX+':'+event.clientY;
+		document.onmousemove = null;
+		divMove.onmouseup = null;
+	}
+}
 
 
 Task 5. Выведите координаты мыши относительно блока в момент движения курсора мыши внутри блока. Координаты выводить под блоком.
