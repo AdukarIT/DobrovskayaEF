@@ -189,4 +189,29 @@ console.log(student.getCourse());
 
 
 });
+
+
+Task 2.
+
+function Product(proteins = 0, fats = 0, carbohydrates = 0, weight = 0, cost = 0) { 
+this.proteins = proteins; 
+this.fats = fats; 
+this.carbohydrates = carbohydrates;
+this.weight = weight;
+this.cost = cost;
+this.calorie = function() {
+	return this.proteins * 4 + this.fats * 9 + this.carbohydrates * 4;
+	};
+this.costFor = function() {
+	return this.cost / this.weight;
+};
+} 
+
+let gamburger = new Product(12.92, 10.09, 28.98, 99, 1.75);
+let cheeseburger = new Product(12.97, 11.79, 26.71, 113, 1.9);
+let bigMac = new Product(11.82, 14.96, 18.48, 210, 4.5);
+
+console.log("100 грамм гамбургера содержит: " + Math.floor(gamburger.calorie()) + " кКал и стоит: " + gamburger.costFor() + " руб.");
+console.log("100 грамм чизбургера содержит: " + Math.floor(cheeseburger.calorie()) + " кКал и стоит: " + cheeseburger.costFor() + " руб.");
+console.log("100 грамм биг-мака содержит: " + Math.floor(bigMac.calorie()) + " кКал и стоит: " + bigMac.costFor() + " руб.");
 */
