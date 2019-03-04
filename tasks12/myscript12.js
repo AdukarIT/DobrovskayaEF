@@ -203,7 +203,7 @@ this.calorie = function() {
 	return this.proteins * 4 + this.fats * 9 + this.carbohydrates * 4;
 	};
 this.costFor = function() {
-	return this.cost / this.weight;
+	return this.cost / this.weight * 100;
 };
 } 
 
