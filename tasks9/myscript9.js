@@ -15,10 +15,10 @@ console.log(find);
 Task 3.
 
 function recursiveSearchTags(docs, tagName) {
-	let takeBack = docs.getElementsByTagName(tagName);
+	let takeBack = document.body.childNodes;
 	console.log([].slice.call(takeBack));
 }
-recursiveSearchTags(document, "div");
+recursiveSearchTags(document, "body");
 
 
 Task 4.
@@ -34,7 +34,7 @@ let list = document.querySelector("ul");
 let array = ["март", "апрель", "май"];
 for(let i = 0; i < array.length; i++) { 
 let listApp = document.createElement("li");
-if (!(i % 2 == 0)) {
+if (i % 2) {
 listApp.style.background = "red";
 }
 listApp.innerHTML = array[i]; 
