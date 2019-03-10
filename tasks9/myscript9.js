@@ -1,39 +1,14 @@
 /*
 Task 1.
 
-function create() {
-	let parent = document.getElementsByTagName("BODY")[0];
-	let firstDiv = document.createElement("div");
-	firstDiv.classList.add("www");
-	firstDiv.style.width = "100px";
-    firstDiv.style.height = "100px";
-    firstDiv.style.background = "yellow";
-    let text = "текст";
-    let textNode = document.createTextNode(text);
-    firstDiv.appendChild(textNode);
-    parent.appendChild(firstDiv);
-}
-create();
+let find = document.getElementById("elem");
+elem.classList.add("www");
 
-let find = document.getElementsByClassName("www");
-console.log(find);
-/*
 
 Task 2.
 
-function create() {
-	let parent = document.getElementsByTagName("BODY")[0];
-	let firstDiv = document.createElement("div");
-	firstDiv.classList.add("www");
-	firstDiv.style.width = "100px";
-    firstDiv.style.height = "100px";
-    firstDiv.style.background = "yellow";
-    parent.appendChild(firstDiv);
-    firstDiv.classList.toggle("www");
-}
-create();
-
-let find = document.getElementsByClassName("www");
+let find = document.getElementById("elem"); 
+elem.classList.toggle("www"); 
 console.log(find);
 
 
