@@ -50,20 +50,15 @@ data.forEach(function(item) {
 
 Task 5.
 
-let cityD = data.filter(
-	function(item) {
-		if (item.city[0] === "D") {
-			return data.sort(function (a, b) {
-				if (a.city < b.city) {
-					return -1;
-				}
-				else {
-					return 1;
-				}
-			}); 
-		}
-	});		
-console.log(cityD);
+let arr = [];
+let array = data.reduce(function(a, b) {
+	if (b.city[0] === "D") {
+		arr.push(b);
+	} return arr.sort(function(a, b) {
+		b.city - a.city;
+	});
+});
+console.log(array);
 
 
 Task 6.
