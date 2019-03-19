@@ -1,0 +1,31 @@
+.error
+{
+  color: red;
+}
+
+form {
+  display: block;
+  width: 450px;
+  height: auto;
+  margin: 50px auto;
+  padding: 10px;
+  border: 3px solid #008B8B;
+  border-radius: 10px;
+  background-color: #F0F8FF;
+  font-size: 18px;
+  font-family: 'Arial';
+}
+
+input, textarea {
+  display: block;
+  margin: 0;
+  padding: 20px;
+  font-size: 20px;
+  font-family: 'Arial';
+}
+
+input:valid + span:after, textarea:valid + span:after {
+	content: '\2714';
+    color: green;
+	font-size: 16px;
+  }
