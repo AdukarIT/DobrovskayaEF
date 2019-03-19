@@ -104,3 +104,7 @@ https://github.com/AdukarIT/DobrovskayaEF/tree/master/tasks11
 Задание к уроку 12. ООП в Javascript.
 
 https://github.com/AdukarIT/DobrovskayaEF/tree/master/tasks12
+
+Задание к уроку 15. Библиотека jQuery.
+
+https://github.com/AdukarIT/DobrovskayaEF/tree/master/tasks15
