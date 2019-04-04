@@ -2,7 +2,6 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <script type=”text/javascript” src=”https://code.jquery.com/jquery-3.3.1.min.js”></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="myscript16.js"></script>
   <title>Homework16</title>
@@ -11,15 +10,23 @@
 
 	<style>
 
-	.newDiv {
+	.link {
 		padding: 10px 10px;
 		font-size: 1.2em;
+		cursor: pointer;
 	}
-	
+
+	.view {
+		display: flex;
+		flex-direction: column nowrap;
+	}
+
 </style>
 
-<div id="albums" width="100px" height="100px"></div>
-<div id="photos" width="100px" height="100px"></div>
+<div class="view">
+	<div id="albums" width="100px" height="100px"></div>
+	<div id="photos"></div>
+</div>
 
 </body>
 </html>
