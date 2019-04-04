@@ -7,6 +7,7 @@ $.getJSON("https://jsonplaceholder.typicode.com/albums", function(json) {
  
 $(document).on('click', '#id', function () {
   let album = $(this).attr("data-id");
+  $("#photos").children().remove();
   $.getJSON("https://jsonplaceholder.typicode.com/photos", function(json) {
     $.each(json, function(index, obj) {
       if(album == obj.albumId) {
