@@ -7,7 +7,7 @@ function names () {
     $.getJSON("https://jsonplaceholder.typicode.com/users", function(json) {
             $('#list').empty();
             $.each(json, function(i, obj) {
-                    $('#list').append($('<option>').text(obj.name).attr('value', obj.val));
+                    $('#list').append($('<option>').text(obj.name).attr('value', obj.name));
             });
     });
 }
