@@ -214,4 +214,25 @@ let bigMac = new Product(11.82, 14.96, 18.48, 210, 4.5);
 console.log("100 грамм гамбургера содержит: " + Math.floor(gamburger.calorie()) + " кКал и стоит: " + gamburger.costFor() + " руб.");
 console.log("100 грамм чизбургера содержит: " + Math.floor(cheeseburger.calorie()) + " кКал и стоит: " + cheeseburger.costFor() + " руб.");
 console.log("100 грамм биг-мака содержит: " + Math.floor(bigMac.calorie()) + " кКал и стоит: " + bigMac.costFor() + " руб.");
+
+Task 3.
+
+let remind = prompt("Введите дату dd-mm-yyyy");
+let finish = new Date(+remind.slice(6, 10), +remind.slice(3, 5) - 1, +remind.slice(0, 2));
+let start = new Date();
+let now = finish - start;
+
+let player = document.getElementById("reminder"); 
+
+const func = () => {
+let myWindow = window.open("", "Reminder", "width=100,height=100");
+myWindow.document.write("It is time!");
+player.style.display = "block";
+player.play();
+
+};
+setTimeout(func, +now);
+
 */
+
+
