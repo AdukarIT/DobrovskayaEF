@@ -56,20 +56,20 @@
 	<input type="text" id="name"><br>
 	Кол-во пончиков: 
 	<input type="text" id="donuts"><br>
-	Минут: <input type="text" id="minutes"><br>
-	Подитог: <input type="text" id="poditog"><br>
-	Налог: <input type="text" id="tax"><br>
-	Итог:<input type="text" id="itog"><br>
+	Минут: <input type="number" id="minutes"><br>
+	Подитог: <input type="number" id="poditog"><br>
+	Налог: <input type="number" id="tax"><br>
+	Итог:<input type="number" id="itog"><br>
 	<input type="submit" value="заказать" onclick="placeOrder();">
 </form>
 -->
 
 <!--Task 2
 <form name="newForm" method="post" action= 
-"mailto:address@domen.domen">
+"" onsubmit="confirm()">
 	<input type="text" id="name">
 	<input type="submit">
-	<input type="reset">
+	<input type="reset" id="res">
 </form>
 -->
 
@@ -83,8 +83,8 @@
 
 <!--Task 4
 <form onSubmit="return validation();">
-<label>Имя<input type="text" id="name" required=""></label>
-<label>E-mail<input type="email" id="email" required=""></label>
+<label>Имя<input type="text" id="name"></label>
+<label>E-mail<input type="email" id="email"></label>
 <input type="submit" onclick="validation();">
 </form>
 -->
