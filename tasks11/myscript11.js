@@ -1,5 +1,4 @@
 
-window.addEventListener('DOMContentLoaded', function() {
 /*
 Task 1. Создайте селект с несколькими опциями, добавьте одну опцию используя Javascript, сделайте так, чтобы по выбору опции выводилось сообщение 
 с данными этой опции.
@@ -101,16 +100,29 @@ function placeOrder() {
 	}
 }
 
+Task 2.
 
-Task 2. in HTML
+function confirm() {
+	if ( document.getElementById('name').value == "" ) {	
+		alert ("Заполните поле")
+		
+	} else {
+		form.action = "mailto:address@domen.domen";
+	}
+}
 
+document.getElementById("res").onclick=function() 
+	{
+		alert ("Вы уверены, что хотите очистить форму?") ;  
+
+}
 
 Task 3.
 
 function validation() {
 	let name = document.getElementById("name").value;
 	let email = document.getElementById("email").value;
-	let regExp = /^[a-zA-Z0-9._\-]+@[a-z]+\.[a-z]{2,3}$/;
+	let regExp = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 	if (name === "" || email === "") {
 		alert("Не все поля заполнены");
 		return false;
@@ -128,11 +140,13 @@ Task 4.
 function validation() {
 	let name = document.getElementById("name").value;
 	let email = document.getElementById("email").value;
-	let regExp = /^[a-zA-Z0-9._\-]+@[a-z]+\.[a-z]{2,3}$/;
+	let regExp = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 	if (name === "" || email === "") {
-		alert("Не все поля заполнены");
+		document.getElementById("name").className = "invalid-field";
 		return false;
 	} else if (!(email).match(regExp)) {
+		document.getElementById("name").classList.remove("invalid-field");
+		document.getElementById("email").className = "invalid-field";
 		alert("Укажите верный e-mail");
 		return false;
 	} else {
@@ -149,15 +163,13 @@ console.log(str.replace(/функция/g, "ФУНКЦИЯ"));
 
 Task 6.
 
-let regExp = /^((0\d|10|11).[0-5]\d\sam)|((1[2-9]|2[0-3]).[0-5]\d\spm)$/; 
+let regExp = /^((0\d|10|11).[0-5]\d\sam)|((1[2-9]|2[0-3]).[0-5]\d\spm)$/;
 console.log(regExp.test("12.11 pm"));
 
 
 Task 7.
 
 let str = "dsf xxx xxx sd"; 
-console.log(str.replace(/(\w+)\s+\1/g, "$1")); 
-
+console.log(str.replace(/\b(\w+)\s(\s?\1\b)+/g, "$1"));
 */
-});
 
