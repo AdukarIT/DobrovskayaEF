@@ -28,16 +28,15 @@ $('#add-button').on('click', function() {
     return false;
   } else {
     $("#myTable tbody").append("<tr id='selectableRows'>" +
-      "<td class='ui-widget-content'>" + name + "</td>" +
-      "<td class='ui-widget-content'>" + phone + "</td>" +
-      "<td class='ui-widget-content'>" + date + "</td>" +
-      "<td class='ui-widget-content'>" + question + "</td>" +
+      "<td>" + name + "</td>" +
+      "<td>" + phone + "</td>" +
+      "<td>" + date + "</td>" +
+      "<td>" + question + "</td>" +
       "</tr>");
 
   }
   modal.style.display = "none";
   document.getElementById('form').reset();
-  $('myTable').selectable();
 });
 
 let dialog = document.getElementById('dialog-confirm');
@@ -54,4 +53,17 @@ cancelDelete.onclick = function() {
 
 $('#delete-btn').on('click', function() {
   dialog.style.display = "block";
+});
+
+$(function() {
+	$('#myTable').on('click', 'tbody tr', function(event) {
+		$(this).addClass('selected').siblings().removeClass('selected');
+	});
+});
+
+$('#delete-row').on('click', function() {
+if($( "#selectableRows" ).hasClass( "selected" )) {
+	  $(".selected").remove();
+	}
+	dialog.style.display = "none";
 });

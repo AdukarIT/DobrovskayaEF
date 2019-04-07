@@ -128,5 +128,6 @@
     cursor: pointer;
 }
 
- #myTable .ui-selecting { background: #FECA40; }
- #myTable .ui-selected { background: #F39814; color: white; }
+.selected {
+  background: yellow;
+}
