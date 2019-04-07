@@ -130,5 +130,3 @@
 
  #myTable .ui-selecting { background: #FECA40; }
  #myTable .ui-selected { background: #F39814; color: white; }
- #myTable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
- #myTable tr { margin: 3px; padding: 0.4em; font-size: 1.4em; height: 18px; }
