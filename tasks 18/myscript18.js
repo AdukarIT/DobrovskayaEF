@@ -62,8 +62,6 @@ $(function() {
 });
 
 $('#delete-row').on('click', function() {
-if($( "#selectableRows" ).hasClass( "selected" )) {
-	  $(".selected").remove();
-	}
+	$(".selected").remove();
 	dialog.style.display = "none";
 });
