@@ -112,3 +112,7 @@ https://github.com/AdukarIT/DobrovskayaEF/tree/master/tasks15
 Задание к уроку 16. jQuery AJAX и анимации.
 
 https://github.com/AdukarIT/DobrovskayaEF/tree/master/tasks%2016
+
+Задание к уроку 18. Библиотека jQuery. Плагины.
+
+https://github.com/AdukarIT/DobrovskayaEF/tree/master/tasks%2018
