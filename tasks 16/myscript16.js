@@ -31,60 +31,63 @@ https://jsfiddle.net/kve8o30x/1/
 
 */
 
-let toggle = 0;
+let red = 0;
+let green = 0;
+let blue = 0;
+let orange = 0;
 
 $(document).on("click", "#red", function() {
-  if (toggle == 0) {
+  if (red == 0) {
     $("#red").animate({
       "right": ""
     }, "slow");
-    toggle = 1;
+    red = 1;
   } else {
     $("#red").animate({
       "left": ""
     }, "slow");
-    toggle = 0;
+    red = 0;
   }
 });
 
 
 
 $(document).on("click", "#green", function() {
-  if (toggle == 0) {
+  if (green == 0) {
     $("#green").animate({
       opacity: .5
     });
-    toggle = 1;
+    green = 1;
   } else {
     $("#green").animate({
       opacity: 1
     });
-    toggle = 0;
+    green = 0;
   }
 });
 
 
 
 $(document).on("click", "#blue", function() {
-  if (toggle == 0) {
+  if (blue == 0) {
     $("#blue").animate({
       height: "100px",
       width: "100px"
     });
-    toggle = 1;
+    blue = 1;
   } else {
     $("#blue").animate({
       height: "50px",
       width: "50px"
     });
-    toggle = 0;
+    blue = 0;
   }
 });
 
 
 
 $(document).on("click", "#orange", function() {
-  if (toggle == 0) {
+  if (orange == 0) {
     $("#orange").animate({
       opacity: 0
     });
@@ -94,7 +97,7 @@ $(document).on("click", "#orange", function() {
     setTimeout(function() {
       $("#orange").css("opacity", "1")
     }, 1050);
-    toggle = 1;
+    orange = 1;
   } else {
     $("#orange").animate({
       opacity: 0
@@ -105,7 +108,7 @@ $(document).on("click", "#orange", function() {
     setTimeout(function() {
       $("#orange").css("opacity", "1")
     }, 1050);
-    toggle = 0;
+    orange = 0;
   }
 });
 
