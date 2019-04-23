@@ -27,6 +27,9 @@ window.addEventListener("load", function onWindowLoad() {
       context.lineWidth = 9;
     } else if (selectVal === '11') {
       context.lineWidth = 10;
+    } else if (selectVal === '12') {
+    	context.lineWidth = 5;
+    	context.strokeStyle = "#FFFFFF";
     }
   });
 
@@ -58,3 +61,6 @@ window.addEventListener("load", function onWindowLoad() {
   });
 
 });
+
+
+
