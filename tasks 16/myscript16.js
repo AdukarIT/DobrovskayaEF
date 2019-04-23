@@ -12,9 +12,25 @@ function names () {
     });
 }
 
+names()
+
 $(document).on("click", "#getName", function() {
-	names();
+  let selectVal = $("#list option:selected").val();
+  $.getJSON("https://jsonplaceholder.typicode.com/users", function(json) {
+  	$.each(json, function(i, obj) {
+  if (selectVal === obj.name) {
+  	$('#output').html('<div><p>ID: '+this.id+'</p><p>Name: '+this.name+'</p><p>Username: '+this.username+
+  		'</p><p>Email: '+this.email+'</p><p class="tittle">Address: </p><p>Street: '+this.address.street+
+  		'</p><p>Suite: '+this.address.suite+'</p><p>City: '+this.address.city+'</p><p>Zipcode: '+this.address.zipcode+
+  		'</p><p class="tittle">Geo: </p><p>Lat: '+this.address.geo.lat+'</p><p>Lng: '+this.address.geo.lng+
+  		'</p><p>Phone: '+this.phone+'</p><p>Website: '+this.website+
+  		'</p><p class="tittle">Company: </p><p>Name: '+this.company.name+'</p><p>CatchPhrase: '+this.company.catchPhrase+'</p><p>Bs: '+this.company.bs+'</p></div>');
+  }
 })
+  })
+});
+
+
 
 /*
 
