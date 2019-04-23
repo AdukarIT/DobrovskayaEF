@@ -1,0 +1,56 @@
+.btn {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  padding: 1px;
+  cursor: pointer;
+  border: solid 1px #fff;
+}
+
+.btn:hover {
+  border: solid 1px red;
+}
+
+.button:active {
+  border: solid 1px #ff0;
+}
+
+#palette,
+#canvas {
+  display: inline-block;
+  border: solid 1px #aaa;
+  cursor: default;
+  vertical-align: top;
+}
+
+#palette {
+  padding-right: 10px;
+  padding-left: 10px;
+  border: solid 1px #fff;
+  font-weight: bold;
+}
+
+.top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+}
+
+#clear {
+  background: yellow;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 5px;
+  margin-left: 30px;
+}
+
+.container {
+  white-space: normal;
+  width: 720px;
+}
