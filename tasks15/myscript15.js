@@ -1,4 +1,5 @@
-$('#reg-form').submit(function () {
+
+$('#reg-form').submit(function (e) {
 	let name = $('#name').val();
 	let phone = $('#phone').val();
 	let email = $('#email').val();
@@ -6,25 +7,35 @@ $('#reg-form').submit(function () {
 	let emailReg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 	let phoneReg = /[0-9 -()+]+$/;
 	if ( name == "" ) {
-		alert('Введите имя');
+     	$('#nameIncorrect').html('<p>Введите имя!</p>');
+     	e.preventDefault();
      	return false;
 	} else if ( phone == "" || (!phoneReg.test(phone)) ) {
+		$('#nameIncorrect').html('');
+		$('#phoneIncorrect').html('<p>Телефон введен некорректно!</p>');
 		$('#nameForm').css('display', 'block');
-		alert('Номер телефона введен некорректно');
+		e.preventDefault();
      	return false;
 	} else if ( email == "" || (!emailReg.test(email)) ) {
+		$('#phoneIncorrect').html('');
+		$('#emailIncorrect').html('<p>Email введен некорректно!</p>');
 		$('#phoneForm').css('display', 'block');
-		alert('Email введен некорректно');
+		e.preventDefault();
      	return false;
      } else if ( message == "" ) {
+     	$('#emailIncorrect').html('');
      	$('#emailForm').css('display', 'block');
-     	alert('Введите сообщение');
+     	$('#textIncorrect').html('<p>Введите текст сообщения!</p>');
+     	e.preventDefault();
      	return false;
      } else if ( message.length < 10 || message.length > 1000 ) {
-     	alert('Сообщение должно быть от 10 до 1000 знаков');
+     	$('#textIncorrect').html('');
+     	$('#textIncorrect').html('<p>Сообщение должно быть от 10 до 1000 знаков!</p>');
+     	e.preventDefault();
      	return false;
      }
      	else {
+     	$('#textIncorrect').html('');
      	$('#messageForm').css('display', 'block');
      }
  });

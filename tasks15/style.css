@@ -9,6 +9,7 @@ form {
   background-color: #F0F8FF;
   font-size: 18px;
   font-family: 'Arial';
+  position: relative;
 }
 
 input, textarea {
@@ -21,4 +22,28 @@ input, textarea {
 
 .hidden {
   display: none;
+}
+
+#nameForm {
+  position: absolute;
+  right: 150px;
+  top: 60px;
+}
+
+#phoneForm {
+  position: absolute;
+  right: 150px;
+  top: 160px;
+}
+
+#emailForm {
+  position: absolute;
+  right: 150px;
+  top: 260px;
+}
+
+#textForm {
+  position: absolute;
+  right: 150px;
+  top: 350px;
 }
