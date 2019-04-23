@@ -116,3 +116,7 @@ https://github.com/AdukarIT/DobrovskayaEF/tree/master/tasks%2016
 Задание к уроку 18. Библиотека jQuery. Плагины.
 
 https://github.com/AdukarIT/DobrovskayaEF/tree/master/tasks%2018
+
+Задание к уроку 20. HTML5 JS API - часть 1.
+
+https://github.com/AdukarIT/DobrovskayaEF/tree/master/tasks20
