@@ -120,3 +120,21 @@ https://github.com/AdukarIT/DobrovskayaEF/tree/master/tasks%2018
 Задание к уроку 20. HTML5 JS API - часть 1.
 
 https://github.com/AdukarIT/DobrovskayaEF/tree/master/tasks20
+
+Проекты:
+
+1. Итоговая верстка:
+
+<a href="https://dobrovskayaelena.github.io/w-gear/public/index.html">Страница 1</a>
+
+<a href="https://dobrovskayaelena.github.io/w-gear/public/shop.html">Страница 2</a>
+
+<a href="https://dobrovskayaelena.github.io/w-gear/public/contact-us.html">Страница 3</a>
+
+2. CRUD:
+
+<a href="https://dobrovskayaelena.github.io/PROJECT1/project.html">База альбомов</a>
+
+3. Search:
+
+<a href="https://dobrovskayaelena.github.io/wiki/wikisearch.html">Сайт поиска</a>
